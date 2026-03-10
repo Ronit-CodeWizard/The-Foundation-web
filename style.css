@@ -11,7 +11,7 @@
 
 @font-face {
     font-family: 'Thalia';
-    src: url('Graphic/font/Thalia.ttf') format('truetype');
+    src: url('./Graphic/font/Thalia.ttf') format('truetype');
 }
 
 .thalia-font{
