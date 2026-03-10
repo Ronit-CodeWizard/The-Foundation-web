@@ -30,14 +30,15 @@ const revealObserver = new IntersectionObserver((entries, observer) => {
         }
     });
 }, {
-    threshold: 0.1,
-    rootMargin: '0px 0px -100px 0px'
+    threshold: 0.05,
+    rootMargin: '0px 0px -50px 0px'
 });
 
 // Initial check for elements already in view
 const checkInitialReveal = () => {
     revealElements.forEach(el => {
         const rect = el.getBoundingClientRect();
+        // If element is in viewport or above it, reveal it
         if (rect.top < window.innerHeight) {
             el.classList.add('reveal-visible');
             revealObserver.unobserve(el);
@@ -47,7 +48,11 @@ const checkInitialReveal = () => {
     });
 };
 
+// Run on DOMContentLoaded and also on window load for safety
+document.addEventListener('DOMContentLoaded', checkInitialReveal);
 window.addEventListener('load', checkInitialReveal);
+// Immediate check as well
+setTimeout(checkInitialReveal, 100);
 
 // Form Handling
 const contactForm = document.getElementById('contact-form');
