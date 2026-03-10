@@ -9,6 +9,15 @@
     animation: marquee 30s linear infinite;
 }
 
+@font-face {
+    font-family: 'Thalia';
+    src: url('Graphic/font/thalia.ttf') format('truetype');
+}
+
+.thalia-font{
+    font-family: 'Thalia', sans-serif;
+}
+
 @keyframes float {
     0% { transform: translateY(0px) rotate(0deg); }
     50% { transform: translateY(-10px) rotate(2deg); }
