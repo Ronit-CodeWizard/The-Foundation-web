@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Registration 2026 | THE FOUNDATION</title>
+    <title>Registration 2026 | The Foundation</title>
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- Google Fonts -->
@@ -54,6 +54,9 @@
 </head>
 <body class="bg-white text-gray-900 font-sans antialiased selection:bg-primary selection:text-white overflow-x-hidden min-h-screen flex flex-col">
 
+    <!-- Graffiti Background -->
+    <div class="graffiti-bg"></div>
+
     <!-- Header -->
     <header class="glass sticky top-0 z-50 border-b border-white/20 py-4">
         <div class="max-w-7xl mx-auto px-6 flex items-center justify-between gap-4">
@@ -64,7 +67,7 @@
                 <a href="index.html" class="flex items-center gap-3 group">
                     <img src="https://i.supaimg.com/92f82b8e-0941-4720-9455-b7257d1262f2/b454a010-4f77-468c-b71b-528723aaeb66.png" class="h-10 w-auto object-contain logo-multiply group-hover:scale-110 transition-transform" alt="Logo">
                     <div class="flex flex-col leading-none">
-                        <span class="text-lg font-extrabold tracking-tight text-primary font-thalia">THE FOUNDATION</span>
+                        <span class="text-2xl font-extrabold text-primary font-thalia">The Foundation</span>
                         <span class="text-[8px] font-bold tracking-[0.2em] uppercase text-secondary">Student Registration Form</span>
                     </div>
                 </a>
@@ -84,8 +87,16 @@
         </div>
     </header>
 
-    <main class="flex-1 mesh-gradient py-12 px-6">
-        <div class="max-w-3xl mx-auto">
+    <main class="flex-1 mesh-gradient py-12 px-6 relative overflow-hidden">
+        <!-- Doodles -->
+        <div class="doodle top-40 -left-10 rotate-45">
+            <i data-lucide="book-open" class="w-24 h-24 text-primary"></i>
+        </div>
+        <div class="doodle bottom-40 -right-10 -rotate-12">
+            <i data-lucide="lightbulb" class="w-32 h-32 text-accent"></i>
+        </div>
+        
+        <div class="max-w-3xl mx-auto relative z-10">
             <!-- Progress Bar -->
             <div class="mb-12">
                 <div class="flex justify-between mb-4">
@@ -98,7 +109,7 @@
             </div>
 
             <!-- Form Container -->
-            <div class="glass p-8 md:p-12 pb-24 rounded-xl shadow-2xl border border-white/60 sketchy-border relative" id="form-container">
+            <div class="glass p-8 md:p-12 pb-24 rounded-xl shadow-2xl border border-white/60 sketchy-border relative tape-effect" id="form-container">
                 <form id="registration-form" class="space-y-8">
                     
                     <!-- Step 1: Personal Info -->
@@ -318,7 +329,7 @@
 
                             <div class="flex items-start gap-3 p-4 bg-blue-50 rounded-lg border border-blue-100">
                                 <i data-lucide="info" class="text-blue-500 w-5 h-5 shrink-0 mt-0.5"></i>
-                                <p class="text-xs text-blue-800 leading-relaxed">By submitting this form, you agree to be contacted by THE FOUNDATION for admission counseling and academic updates.</p>
+                                <p class="text-xs text-blue-800 leading-relaxed">By submitting this form, you agree to be contacted by The Foundation for admission counseling and academic updates.</p>
                             </div>
                         </div>
                     </div>
@@ -347,7 +358,7 @@
             </div>
 
             <!-- Footer Info -->
-            <div class="mt-12 grid grid-cols-1 md:grid-cols-3 gap-8 text-center md:text-left font-mono">
+            <div class="mt-12 grid grid-cols-1 md:grid-cols-3 gap-8 text-center md:text-left font-sans">
                 <div class="glass p-6 rounded-lg sketchy-border-sm">
                     <h5 class="text-[10px] font-black uppercase tracking-widest text-secondary mb-2">Visit Centre</h5>
                     <p class="text-xs text-gray-500 leading-relaxed">Durga Mahal, Pramod Nagar, Parsudih, Jamshedpur</p>
@@ -364,7 +375,7 @@
         </div>
     </main>
 
-    <footer class="bg-primary py-12 text-center font-mono">
+    <footer class="bg-primary py-12 text-center font-sans">
         <div class="flex justify-center gap-4 mb-6">
             <a href="#" class="w-10 h-10 rounded-lg glass flex items-center justify-center text-white hover:bg-white hover:text-primary transition-all sketchy-border-sm">
                 <i data-lucide="instagram" class="w-5 h-5"></i>
@@ -373,7 +384,7 @@
                 <i data-lucide="facebook" class="w-5 h-5"></i>
             </a>
         </div>
-        <p class="text-[10px] font-bold text-white/40 uppercase tracking-[0.3em]">© 2026 THE FOUNDATION JAMSHEDPUR. ALL RIGHTS RESERVED.</p>
+        <p class="text-[10px] font-bold text-white/40 uppercase tracking-[0.3em]">© 2026 The Foundation Jamshedpur. All Rights Reserved.</p>
     </footer>
 
     <script src="register.js"></script>
