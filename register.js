@@ -1,5 +1,7 @@
 // Initialize Lucide Icons
-lucide.createIcons();
+if (typeof lucide !== 'undefined') {
+    lucide.createIcons();
+}
 
 // Multi-step Form Logic
 const form = document.getElementById('registration-form');
@@ -234,11 +236,25 @@ prevBtn.addEventListener('click', () => {
 form.addEventListener('submit', (e) => {
     e.preventDefault();
     if (validateStep(currentStep)) {
-        const studentName = document.getElementById('summary-name').textContent;
+        const formData = new FormData(form);
+        const data = {
+            formType: 'Registration',
+            studentName: formData.get('studentName') || '',
+            guardianName: formData.get('guardianName') || '',
+            class: formData.get('class') || '',
+            board: (formData.get('board') === 'Other' ? formData.get('otherBoard') : formData.get('board')) || '',
+            school: formData.get('school') || '',
+            contact: formData.get('contact') || '',
+            gender: formData.get('gender') || '',
+            programme: formData.get('programme') || '',
+            source: formData.get('source') || ''
+        };
+
+        // 1. Show Success Screen IMMEDIATELY (No waiting)
+        const studentName = data.studentName;
         document.getElementById('success-student-name').textContent = studentName;
-        
-        // Success Screen
         successScreen.classList.remove('hidden');
+        window.scrollTo({ top: 0, behavior: 'smooth' });
         
         // Confetti
         confetti({
@@ -247,6 +263,37 @@ form.addEventListener('submit', (e) => {
             origin: { y: 0.6 },
             colors: ['#0d1658', '#e01b29', '#f8be06']
         });
+
+        // 2. Prepare WhatsApp message as backup
+        const waMessage = `*New Registration from Website*%0A` +
+            `*Name:* ${data.studentName}%0A` +
+            `*Guardian:* ${data.guardianName}%0A` +
+            `*Class:* ${data.class}%0A` +
+            `*Board:* ${data.board}%0A` +
+            `*School:* ${data.school}%0A` +
+            `*Contact:* ${data.contact}%0A` +
+            `*Programme:* ${data.programme}`;
+        
+        // Add WhatsApp button to success screen dynamically
+        const successContent = successScreen.querySelector('.glass');
+        const existingWA = document.getElementById('wa-backup-btn');
+        if (!existingWA) {
+            const waBtn = document.createElement('a');
+            waBtn.id = 'wa-backup-btn';
+            waBtn.href = `https://wa.me/919123456789?text=${waMessage}`;
+            waBtn.target = '_blank';
+            waBtn.className = 'flex items-center justify-center gap-2 w-full py-4 bg-[#25D366] text-white rounded-xl font-bold mt-6 sketchy-border-sm';
+            waBtn.innerHTML = '<i data-lucide="message-circle"></i> Confirm on WhatsApp (Optional)';
+            successContent.appendChild(waBtn);
+            lucide.createIcons();
+        }
+
+        // 3. Try to send to Google Sheet in the background
+        fetch('https://sheetdb.io/api/v1/gytk5v49lab4k', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ data: [data] })
+        }).catch(err => console.log('Background sync failed, but user is happy.'));
     }
 });
 

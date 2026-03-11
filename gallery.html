@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth no-js">
+<head>
+    <script>document.documentElement.classList.remove('no-js');</script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery | The Foundation Jamshedpur</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="style.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#0d1658',
+                        secondary: '#e01b29',
+                        accent: '#f8be06',
+                        surface: '#f8f9fa',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-white text-gray-900 font-sans antialiased selection:bg-primary selection:text-white overflow-x-hidden">
+
+    <!-- Graffiti Background -->
+    <div class="graffiti-bg"></div>
+
+    <!-- News Ticker -->
+    <div class="bg-primary text-white py-2 overflow-hidden relative z-[60]">
+        <div class="flex whitespace-nowrap animate-marquee">
+            <div class="flex items-center gap-8 px-8 border-r border-white/10">
+                <span class="text-xs font-bold uppercase tracking-wider">Admission Open for Session 2026-27 | JEE & NEET Batches Starting April 15th</span>
+                <span class="text-xs font-bold uppercase tracking-wider">FSAT Scholarship Test scheduled for March 25th</span>
+            </div>
+            <div class="flex items-center gap-8 px-8 border-r border-white/10">
+                <span class="text-xs font-bold uppercase tracking-wider">Admission Open for Session 2026-27 | JEE & NEET Batches Starting April 15th</span>
+                <span class="text-xs font-bold uppercase tracking-wider">FSAT Scholarship Test scheduled for March 25th</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header id="navbar" class="glass sticky top-0 z-50 border-b border-white/20 py-4">
+        <div class="max-w-7xl mx-auto px-6 flex items-center justify-between gap-4">
+            <div class="flex items-center gap-6">
+                <a href="index.html" class="w-10 h-10 rounded-xl glass flex items-center justify-center text-primary hover:bg-primary hover:text-white transition-all sketchy-border-sm" title="Back to Home">
+                    <i data-lucide="arrow-left" class="w-5 h-5"></i>
+                </a>
+                <a href="index.html" class="flex items-center gap-3 group">
+                    <img src="https://i.supaimg.com/92f82b8e-0941-4720-9455-b7257d1262f2/b454a010-4f77-468c-b71b-528723aaeb66.png" class="h-10 w-auto object-contain logo-multiply group-hover:scale-110 transition-transform" alt="Logo">
+                    <div class="flex flex-col leading-none">
+                        <span class="text-2xl font-extrabold text-primary font-thalia">The Foundation</span>
+                        <span class="text-[8px] font-bold tracking-[0.2em] uppercase text-secondary">Campus Gallery</span>
+                    </div>
+                </a>
+            </div>
+            
+            <div class="hidden lg:flex items-center gap-8">
+                <a href="index.html" class="text-sm font-semibold text-gray-700 hover:text-primary transition-colors">Home</a>
+                <a href="courses.html" class="text-sm font-semibold text-gray-700 hover:text-primary transition-colors">Courses</a>
+                <a href="gallery.html" class="text-sm font-semibold text-primary">Gallery</a>
+                <a href="demo.html" class="text-sm font-semibold text-gray-700 hover:text-primary transition-colors">Demo Class</a>
+            </div>
+
+            <!-- Mobile Toggle -->
+            <button id="mobile-menu-toggle" class="lg:hidden p-2 text-primary">
+                <i data-lucide="menu"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden absolute top-full left-0 w-full bg-white/95 backdrop-blur-3xl shadow-2xl flex flex-col p-6 gap-4 border-t border-gray-100 sketchy-border">
+            <a href="index.html" class="text-lg font-semibold text-gray-800">Home</a>
+            <a href="courses.html" class="text-lg font-semibold text-gray-800">Courses</a>
+            <a href="gallery.html" class="text-lg font-semibold text-gray-800">Gallery</a>
+            <a href="demo.html" class="text-lg font-semibold text-gray-800">Demo Class</a>
+            <a href="register.html" class="btn-primary sketchy-border w-full py-4 font-bold inline-block text-center">Admission 2026</a>
+        </div>
+    </header>
+
+    <section class="pt-40 pb-24 mesh-gradient relative overflow-hidden">
+        <div class="absolute inset-0 bg-primary/5 pointer-events-none"></div>
+        <div class="max-w-7xl mx-auto px-6 text-center relative z-10">
+            <h1 class="text-6xl md:text-8xl font-black text-primary mb-8 tracking-tighter reveal-up">
+                Campus <span class="text-secondary italic">Life</span>
+            </h1>
+            <p class="text-xl md:text-2xl text-gray-700 max-w-3xl mx-auto reveal-up font-medium" style="transition-delay: 100ms;">
+                Take a look at our state-of-the-art facilities and vibrant learning environment in Jamshedpur.
+            </p>
+        </div>
+    </section>
+
+    <!-- Gallery Grid -->
+    <section class="py-20">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="columns-1 md:columns-2 lg:columns-3 gap-8 space-y-8">
+                <!-- Classroom 1 -->
+                <div class="reveal-up break-inside-avoid">
+                    <div class="glass p-3 rounded-2xl border border-white/60 shadow-xl sketchy-border group overflow-hidden tape-effect">
+                        <img src="https://picsum.photos/seed/classroom1/800/600" alt="Classroom" class="w-full h-auto rounded-xl grayscale group-hover:grayscale-0 transition-all duration-700 scale-110 group-hover:scale-100" referrerPolicy="no-referrer">
+                        <div class="mt-4 px-2">
+                            <h4 class="font-bold text-primary">Modern Classrooms</h4>
+                            <p class="text-xs text-gray-500">Equipped with smart boards and ergonomic seating.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Lab -->
+                <div class="reveal-up break-inside-avoid" style="transition-delay: 100ms;">
+                    <div class="glass p-3 rounded-2xl border border-white/60 shadow-xl sketchy-border group overflow-hidden pin-effect">
+                        <img src="https://picsum.photos/seed/lab/800/1000" alt="Science Lab" class="w-full h-auto rounded-xl grayscale group-hover:grayscale-0 transition-all duration-700 scale-110 group-hover:scale-100" referrerPolicy="no-referrer">
+                        <div class="mt-4 px-2">
+                            <h4 class="font-bold text-primary">Science Labs</h4>
+                            <p class="text-xs text-gray-500">Hands-on learning with advanced equipment.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Library -->
+                <div class="reveal-up break-inside-avoid" style="transition-delay: 200ms;">
+                    <div class="glass p-3 rounded-2xl border border-white/60 shadow-xl sketchy-border group overflow-hidden tape-effect">
+                        <img src="https://picsum.photos/seed/library/800/500" alt="Library" class="w-full h-auto rounded-xl grayscale group-hover:grayscale-0 transition-all duration-700 scale-110 group-hover:scale-100" referrerPolicy="no-referrer">
+                        <div class="mt-4 px-2">
+                            <h4 class="font-bold text-primary">Resource Center</h4>
+                            <p class="text-xs text-gray-500">A quiet space with thousands of reference books.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Study Area -->
+                <div class="reveal-up break-inside-avoid" style="transition-delay: 300ms;">
+                    <div class="glass p-3 rounded-2xl border border-white/60 shadow-xl sketchy-border group overflow-hidden pin-effect">
+                        <img src="https://picsum.photos/seed/study/800/800" alt="Study Area" class="w-full h-auto rounded-xl grayscale group-hover:grayscale-0 transition-all duration-700 scale-110 group-hover:scale-100" referrerPolicy="no-referrer">
+                        <div class="mt-4 px-2">
+                            <h4 class="font-bold text-primary">Self-Study Zones</h4>
+                            <p class="text-xs text-gray-500">Dedicated areas for focused individual preparation.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Faculty Room -->
+                <div class="reveal-up break-inside-avoid" style="transition-delay: 400ms;">
+                    <div class="glass p-3 rounded-2xl border border-white/60 shadow-xl sketchy-border group overflow-hidden tape-effect">
+                        <img src="https://picsum.photos/seed/faculty/800/1200" alt="Faculty Room" class="w-full h-auto rounded-xl grayscale group-hover:grayscale-0 transition-all duration-700 scale-110 group-hover:scale-100" referrerPolicy="no-referrer">
+                        <div class="mt-4 px-2">
+                            <h4 class="font-bold text-primary">Mentorship Hub</h4>
+                            <p class="text-xs text-gray-500">Where students connect with expert faculty.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Reception -->
+                <div class="reveal-up break-inside-avoid" style="transition-delay: 500ms;">
+                    <div class="glass p-3 rounded-2xl border border-white/60 shadow-xl sketchy-border group overflow-hidden pin-effect">
+                        <img src="https://picsum.photos/seed/reception/800/600" alt="Reception" class="w-full h-auto rounded-xl grayscale group-hover:grayscale-0 transition-all duration-700 scale-110 group-hover:scale-100" referrerPolicy="no-referrer">
+                        <div class="mt-4 px-2">
+                            <h4 class="font-bold text-primary">Main Reception</h4>
+                            <p class="text-xs text-gray-500">Welcome to The Foundation Jamshedpur.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-primary text-white pt-20 pb-10 relative overflow-hidden border-t border-white/10">
+        <div class="max-w-7xl mx-auto px-6 relative z-10">
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
+                <div class="sm:col-span-2 lg:col-span-2">
+                    <div class="flex items-center gap-3 mb-6">
+                        <img src="https://i.supaimg.com/92f82b8e-0941-4720-9455-b7257d1262f2/b454a010-4f77-468c-b71b-528723aaeb66.png" class="h-10 w-auto object-contain logo-multiply bg-white rounded-lg p-1" alt="The Foundation Logo" referrerPolicy="no-referrer">
+                        <span class="text-2xl font-extrabold font-thalia">The Foundation</span>
+                    </div>
+                    <p class="text-white/60 max-w-sm mb-8 leading-relaxed">
+                        Empowering students in Jamshedpur with quality education and mentorship since 2019. Join us to create the life you love.
+                    </p>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-bold mb-6">Quick Links</h4>
+                    <ul class="space-y-4 text-white/60">
+                        <li><a href="index.html" class="hover:text-white transition-colors">Home</a></li>
+                        <li><a href="courses.html" class="hover:text-white transition-colors">Courses</a></li>
+                        <li><a href="gallery.html" class="hover:text-white transition-colors">Gallery</a></li>
+                        <li><a href="demo.html" class="hover:text-white transition-colors">Demo Class</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="pt-10 border-t border-white/10 text-center text-sm text-white/40">
+                <p>© 2026 The Foundation Jamshedpur. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

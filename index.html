@@ -1,6 +1,7 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
+<html lang="en" class="scroll-smooth no-js">
 <head>
+    <script>document.documentElement.classList.remove('no-js');</script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Foundation | Jamshedpur's #1 Coaching</title>
@@ -59,16 +60,18 @@
                     </div>
                     <div class="flex flex-col leading-none">
                         <span class="text-2xl font-extrabold text-primary font-thalia">The Foundation</span>
-                        <span class="text-[8px] font-bold tracking-[0.2em] uppercase text-secondary">Jamshedpur</span>
+                        <span class="text-[8px] font-bold tracking-[0.2em] text-secondary">Jamshedpur</span>
                     </div>
                 </div>
 
                 <!-- Desktop Nav -->
                 <div class="hidden lg:flex items-center gap-8">
-                    <a href="#" class="text-sm font-semibold text-gray-700 hover:text-primary transition-colors">Home</a>
-                    <a href="#courses" class="text-sm font-semibold text-gray-700 hover:text-primary transition-colors">Courses</a>
+                    <a href="index.html" class="text-sm font-semibold text-primary">Home</a>
+                    <a href="courses.html" class="text-sm font-semibold text-gray-700 hover:text-primary transition-colors">Courses</a>
+                    <a href="gallery.html" class="text-sm font-semibold text-gray-700 hover:text-primary transition-colors">Gallery</a>
+                    <a href="demo.html" class="text-sm font-semibold text-gray-700 hover:text-primary transition-colors">Demo Class</a>
                     <a href="#about" class="text-sm font-semibold text-gray-700 hover:text-primary transition-colors">About</a>
-                    <a href="#contact" class="text-sm font-semibold text-gray-700 hover:text-primary transition-colors">Contact</a>
+                    <a href="#results" class="text-sm font-semibold text-gray-700 hover:text-primary transition-colors">Results</a>
                     <a href="register.html" class="btn-primary sketchy-border py-2 px-6 text-sm inline-block text-center">Enroll Now</a>
                 </div>
 
@@ -80,10 +83,12 @@
 
             <!-- Mobile Menu -->
             <div id="mobile-menu" class="hidden absolute top-full left-0 w-full bg-white/95 backdrop-blur-3xl shadow-2xl flex flex-col p-6 gap-4 border-t border-gray-100 sketchy-border">
-                <a href="#" class="text-lg font-semibold text-gray-800">Home</a>
-                <a href="#courses" class="text-lg font-semibold text-gray-800">Courses</a>
+                <a href="index.html" class="text-lg font-semibold text-gray-800">Home</a>
+                <a href="courses.html" class="text-lg font-semibold text-gray-800">Courses</a>
+                <a href="gallery.html" class="text-lg font-semibold text-gray-800">Gallery</a>
+                <a href="demo.html" class="text-lg font-semibold text-gray-800">Demo Class</a>
                 <a href="#about" class="text-lg font-semibold text-gray-800">About</a>
-                <a href="#contact" class="text-lg font-semibold text-gray-800">Contact</a>
+                <a href="#results" class="text-lg font-semibold text-gray-800">Results</a>
                 <a href="register.html" class="btn-primary sketchy-border w-full py-4 font-bold inline-block text-center">Admission 2026</a>
             </div>
         </nav>
@@ -124,7 +129,7 @@
                 
                 <div class="flex flex-col sm:flex-row items-center gap-6">
                     <a href="register.html" class="btn-primary sketchy-border w-full sm:w-auto py-4 px-10 text-lg scale-110 shadow-2xl shadow-primary/30 inline-block text-center">Apply for 2026</a>
-                    <button class="btn-outline glass sketchy-border w-full sm:w-auto py-4 px-10 text-lg">Explore Courses</button>
+                    <a href="courses.html" class="btn-outline glass sketchy-border w-full sm:w-auto py-4 px-10 text-lg inline-block text-center">Explore Courses</a>
                 </div>
                 
                 <div class="mt-16 flex items-center gap-8">
@@ -225,8 +230,13 @@
                 </p>
             </div>
 
-            <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
-                <div class="md:col-span-2 md:row-span-2 glass p-8 rounded-xl flex flex-col justify-between overflow-hidden relative group sketchy-border reveal-up pin-effect">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-6 relative">
+                <!-- Decorative background elements for About -->
+                <div class="absolute -top-10 -left-10 w-40 h-40 bg-accent/10 rounded-full blur-3xl -z-10 animate-pulse"></div>
+                <div class="absolute -bottom-10 -right-10 w-60 h-60 bg-secondary/5 rounded-full blur-3xl -z-10 animate-pulse" style="animation-delay: 1s;"></div>
+                <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-full border-2 border-dashed border-gray-100 rounded-3xl -z-20 rotate-3"></div>
+
+                <div class="md:col-span-2 md:row-span-2 glass p-8 rounded-xl flex flex-col justify-between overflow-hidden relative group sketchy-border reveal-up pin-effect -rotate-2 hover:rotate-0 transition-transform duration-500 shadow-2xl">
                     <div class="relative z-10">
                         <div class="w-14 h-14 bg-primary rounded-lg flex items-center justify-center mb-6 shadow-xl shadow-primary/20">
                             <i data-lucide="shield" class="text-white w-8 h-8"></i>
@@ -237,7 +247,7 @@
                     <img src="https://picsum.photos/seed/mentor/400/300" alt="" class="absolute bottom-0 right-0 w-1/2 opacity-20 group-hover:opacity-40 transition-opacity">
                 </div>
 
-                <div class="glass p-8 rounded-xl flex flex-col justify-center text-center sketchy-border reveal-up pin-effect" style="transition-delay: 100ms;">
+                <div class="glass p-8 rounded-xl flex flex-col justify-center text-center sketchy-border reveal-up pin-effect rotate-3 hover:rotate-0 transition-transform duration-500 shadow-xl" style="transition-delay: 100ms;">
                     <div class="w-12 h-12 bg-secondary rounded-lg flex items-center justify-center mb-4 mx-auto shadow-lg shadow-secondary/20">
                         <i data-lucide="users" class="text-white"></i>
                     </div>
@@ -245,7 +255,7 @@
                     <p class="text-sm text-gray-500">Small groups for maximum interaction.</p>
                 </div>
 
-                <div class="glass p-8 rounded-xl flex flex-col justify-center text-center sketchy-border reveal-up pin-effect" style="transition-delay: 200ms;">
+                <div class="glass p-8 rounded-xl flex flex-col justify-center text-center sketchy-border reveal-up pin-effect -rotate-3 hover:rotate-0 transition-transform duration-500 shadow-xl" style="transition-delay: 200ms;">
                     <div class="w-12 h-12 bg-accent rounded-lg flex items-center justify-center mb-4 mx-auto shadow-lg shadow-accent/20">
                         <i data-lucide="book-open" class="text-white"></i>
                     </div>
@@ -253,7 +263,7 @@
                     <p class="text-sm text-gray-500">24/7 access to resources.</p>
                 </div>
 
-                <div class="md:col-span-2 glass p-8 rounded-xl flex items-center gap-8 overflow-hidden relative group sketchy-border reveal-up pin-effect" style="transition-delay: 300ms;">
+                <div class="md:col-span-2 glass p-8 rounded-xl flex items-center gap-8 overflow-hidden relative group sketchy-border reveal-up pin-effect rotate-2 hover:rotate-0 transition-transform duration-500 shadow-2xl" style="transition-delay: 300ms;">
                     <div class="relative z-10 flex-1">
                         <div class="w-14 h-14 bg-accent rounded-lg flex items-center justify-center mb-6 shadow-xl shadow-accent/20">
                             <i data-lucide="target" class="text-primary w-8 h-8"></i>
@@ -277,58 +287,92 @@
                 <h3 class="text-3xl md:text-5xl font-extrabold text-primary">Academic Excellence Courses</h3>
             </div>
 
-            <div class="grid md:grid-cols-3 gap-8">
-                <!-- JEE -->
-                <div class="glass p-10 flex flex-col rounded-xl border border-white/60 shadow-xl hover:shadow-2xl transition-all duration-500 group sketchy-border reveal-up tape-effect">
-                    <div class="w-16 h-16 bg-primary/10 rounded-lg flex items-center justify-center mb-8 group-hover:scale-110 transition-transform animate-float">
-                        <i data-lucide="zap" class="text-primary w-8 h-8"></i>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Schooling -->
+                <div class="glass p-8 flex flex-col rounded-xl border border-white/60 shadow-xl hover:shadow-2xl transition-all duration-500 group sketchy-border reveal-up tape-effect">
+                    <div class="w-14 h-14 bg-blue-100 rounded-lg flex items-center justify-center mb-6 group-hover:scale-110 transition-transform animate-float">
+                        <i data-lucide="book" class="text-blue-600 w-6 h-6"></i>
                     </div>
-                    <span class="text-xs font-bold text-gray-400 uppercase tracking-widest mb-2">Class 11, 12 & Droppers</span>
-                    <h4 class="text-2xl font-bold text-primary mb-4">JEE Advanced</h4>
-                    <p class="text-gray-600 mb-8 leading-relaxed">Comprehensive coaching for IIT aspirants with focus on deep conceptual understanding.</p>
-                    <ul class="space-y-3 mb-8">
-                        <li class="flex items-center gap-2 text-sm text-gray-500 font-medium"><i data-lucide="check-circle-2" class="text-green-500 w-4 h-4"></i> Daily Practice Papers</li>
-                        <li class="flex items-center gap-2 text-sm text-gray-500 font-medium"><i data-lucide="check-circle-2" class="text-green-500 w-4 h-4"></i> Weekly Mock Tests</li>
-                    </ul>
-                    <div class="mt-auto pt-6 border-t border-gray-100 flex items-center justify-between">
-                        <a href="register.html" class="text-sm font-bold text-primary hover:text-secondary transition-colors flex items-center gap-2">Enroll Now <i data-lucide="arrow-right" class="w-4 h-4"></i></a>
-                        <div class="text-[10px] font-bold text-gray-400 uppercase">Batch 2026</div>
+                    <span class="text-[10px] font-bold text-gray-400 uppercase tracking-widest mb-2">Academic Support</span>
+                    <h4 class="text-xl font-bold text-primary mb-3">Schooling</h4>
+                    <p class="text-sm text-gray-600 mb-6 leading-relaxed">Regular academic support for school boards with focus on fundamental clarity.</p>
+                    <div class="mt-auto pt-4 border-t border-gray-100 flex items-center justify-between">
+                        <a href="register.html" class="text-xs font-bold text-primary hover:text-secondary transition-colors flex items-center gap-2">Enroll Now <i data-lucide="arrow-right" class="w-3 h-3"></i></a>
+                        <div class="text-[9px] font-bold text-gray-400 uppercase">Class 4-12</div>
                     </div>
                 </div>
-                <!-- NEET -->
-                <div class="glass p-10 flex flex-col rounded-xl border border-white/60 shadow-xl hover:shadow-2xl transition-all duration-500 group sketchy-border reveal-up tape-effect" style="transition-delay: 100ms;">
-                    <div class="w-16 h-16 bg-secondary/10 rounded-lg flex items-center justify-center mb-8 group-hover:scale-110 transition-transform animate-float">
-                        <i data-lucide="heart" class="text-secondary w-8 h-8"></i>
+                <!-- Schooling + JEE -->
+                <div class="glass p-8 flex flex-col rounded-xl border border-white/60 shadow-xl hover:shadow-2xl transition-all duration-500 group sketchy-border reveal-up tape-effect" style="transition-delay: 100ms;">
+                    <div class="w-14 h-14 bg-indigo-100 rounded-lg flex items-center justify-center mb-6 group-hover:scale-110 transition-transform animate-float">
+                        <i data-lucide="zap" class="text-indigo-600 w-6 h-6"></i>
                     </div>
-                    <span class="text-xs font-bold text-gray-400 uppercase tracking-widest mb-2">Class 11, 12 & Droppers</span>
-                    <h4 class="text-2xl font-bold text-primary mb-4">NEET Medical</h4>
-                    <p class="text-gray-600 mb-8 leading-relaxed">Specialized program for medical entrance exams with intensive biology modules.</p>
-                    <ul class="space-y-3 mb-8">
-                        <li class="flex items-center gap-2 text-sm text-gray-500 font-medium"><i data-lucide="check-circle-2" class="text-green-500 w-4 h-4"></i> NCERT Based Learning</li>
-                        <li class="flex items-center gap-2 text-sm text-gray-500 font-medium"><i data-lucide="check-circle-2" class="text-green-500 w-4 h-4"></i> Personal Mentorship</li>
-                    </ul>
-                    <div class="mt-auto pt-6 border-t border-gray-100 flex items-center justify-between">
-                        <a href="register.html" class="text-sm font-bold text-primary hover:text-secondary transition-colors flex items-center gap-2">Enroll Now <i data-lucide="arrow-right" class="w-4 h-4"></i></a>
-                        <div class="text-[10px] font-bold text-gray-400 uppercase">Batch 2026</div>
+                    <span class="text-[10px] font-bold text-gray-400 uppercase tracking-widest mb-2">Engineering Focus</span>
+                    <h4 class="text-xl font-bold text-primary mb-3">Schooling + JEE</h4>
+                    <p class="text-sm text-gray-600 mb-6 leading-relaxed">Integrated program for school boards and IIT-JEE entrance preparation.</p>
+                    <div class="mt-auto pt-4 border-t border-gray-100 flex items-center justify-between">
+                        <a href="register.html" class="text-xs font-bold text-primary hover:text-secondary transition-colors flex items-center gap-2">Enroll Now <i data-lucide="arrow-right" class="w-3 h-3"></i></a>
+                        <div class="text-[9px] font-bold text-gray-400 uppercase">Class 11-12</div>
                     </div>
                 </div>
-                <!-- Foundation -->
-                <div class="glass p-10 flex flex-col rounded-xl border border-white/60 shadow-xl hover:shadow-2xl transition-all duration-500 group sketchy-border reveal-up tape-effect" style="transition-delay: 200ms;">
-                    <div class="w-16 h-16 bg-accent/10 rounded-lg flex items-center justify-center mb-8 group-hover:scale-110 transition-transform animate-float">
-                        <i data-lucide="book-open" class="text-accent w-8 h-8"></i>
+                <!-- Schooling + NEET -->
+                <div class="glass p-8 flex flex-col rounded-xl border border-white/60 shadow-xl hover:shadow-2xl transition-all duration-500 group sketchy-border reveal-up tape-effect" style="transition-delay: 200ms;">
+                    <div class="w-14 h-14 bg-red-100 rounded-lg flex items-center justify-center mb-6 group-hover:scale-110 transition-transform animate-float">
+                        <i data-lucide="heart" class="text-red-600 w-6 h-6"></i>
                     </div>
-                    <span class="text-xs font-bold text-gray-400 uppercase tracking-widest mb-2">Class 8, 9 & 10</span>
-                    <h4 class="text-2xl font-bold text-primary mb-4">Foundation</h4>
-                    <p class="text-gray-600 mb-8 leading-relaxed">Building a strong base for future competitive exams while excelling in school boards.</p>
-                    <ul class="space-y-3 mb-8">
-                        <li class="flex items-center gap-2 text-sm text-gray-500 font-medium"><i data-lucide="check-circle-2" class="text-green-500 w-4 h-4"></i> Olympiad Preparation</li>
-                        <li class="flex items-center gap-2 text-sm text-gray-500 font-medium"><i data-lucide="check-circle-2" class="text-green-500 w-4 h-4"></i> Board Exam Focus</li>
-                    </ul>
-                    <div class="mt-auto pt-6 border-t border-gray-100 flex items-center justify-between">
-                        <a href="register.html" class="text-sm font-bold text-primary hover:text-secondary transition-colors flex items-center gap-2">Enroll Now <i data-lucide="arrow-right" class="w-4 h-4"></i></a>
-                        <div class="text-[10px] font-bold text-gray-400 uppercase">Batch 2026</div>
+                    <span class="text-[10px] font-bold text-gray-400 uppercase tracking-widest mb-2">Medical Focus</span>
+                    <h4 class="text-xl font-bold text-primary mb-3">Schooling + NEET</h4>
+                    <p class="text-sm text-gray-600 mb-6 leading-relaxed">Comprehensive medical entrance coaching integrated with school curriculum.</p>
+                    <div class="mt-auto pt-4 border-t border-gray-100 flex items-center justify-between">
+                        <a href="register.html" class="text-xs font-bold text-primary hover:text-secondary transition-colors flex items-center gap-2">Enroll Now <i data-lucide="arrow-right" class="w-3 h-3"></i></a>
+                        <div class="text-[9px] font-bold text-gray-400 uppercase">Class 11-12</div>
                     </div>
                 </div>
+                <!-- Schooling + NTSE -->
+                <div class="glass p-8 flex flex-col rounded-xl border border-white/60 shadow-xl hover:shadow-2xl transition-all duration-500 group sketchy-border reveal-up tape-effect" style="transition-delay: 300ms;">
+                    <div class="w-14 h-14 bg-green-100 rounded-lg flex items-center justify-center mb-6 group-hover:scale-110 transition-transform animate-float">
+                        <i data-lucide="target" class="text-green-600 w-6 h-6"></i>
+                    </div>
+                    <span class="text-[10px] font-bold text-gray-400 uppercase tracking-widest mb-2">Scholarship Prep</span>
+                    <h4 class="text-xl font-bold text-primary mb-3">Schooling + NTSE</h4>
+                    <p class="text-sm text-gray-600 mb-6 leading-relaxed">Targeted preparation for NTSE and other national scholarship exams.</p>
+                    <div class="mt-auto pt-4 border-t border-gray-100 flex items-center justify-between">
+                        <a href="register.html" class="text-xs font-bold text-primary hover:text-secondary transition-colors flex items-center gap-2">Enroll Now <i data-lucide="arrow-right" class="w-3 h-3"></i></a>
+                        <div class="text-[9px] font-bold text-gray-400 uppercase">Class 8-10</div>
+                    </div>
+                </div>
+                <!-- Olympiads -->
+                <div class="glass p-8 flex flex-col rounded-xl border border-white/60 shadow-xl hover:shadow-2xl transition-all duration-500 group sketchy-border reveal-up tape-effect" style="transition-delay: 400ms;">
+                    <div class="w-14 h-14 bg-yellow-100 rounded-lg flex items-center justify-center mb-6 group-hover:scale-110 transition-transform animate-float">
+                        <i data-lucide="award" class="text-yellow-600 w-6 h-6"></i>
+                    </div>
+                    <span class="text-[10px] font-bold text-gray-400 uppercase tracking-widest mb-2">Excellence</span>
+                    <h4 class="text-xl font-bold text-primary mb-3">Olympiads</h4>
+                    <p class="text-sm text-gray-600 mb-6 leading-relaxed">Specialized training for Math, Science, and Cyber Olympiads.</p>
+                    <div class="mt-auto pt-4 border-t border-gray-100 flex items-center justify-between">
+                        <a href="register.html" class="text-xs font-bold text-primary hover:text-secondary transition-colors flex items-center gap-2">Enroll Now <i data-lucide="arrow-right" class="w-3 h-3"></i></a>
+                        <div class="text-[9px] font-bold text-gray-400 uppercase">Class 5-10</div>
+                    </div>
+                </div>
+                <!-- FSAT -->
+                <div class="glass p-8 flex flex-col rounded-xl border border-white/60 shadow-xl hover:shadow-2xl transition-all duration-500 group sketchy-border reveal-up pin-effect" style="transition-delay: 500ms;">
+                    <div class="w-14 h-14 bg-accent/20 rounded-lg flex items-center justify-center mb-6 group-hover:scale-110 transition-transform animate-float">
+                        <i data-lucide="sparkles" class="text-accent w-6 h-6"></i>
+                    </div>
+                    <span class="text-[10px] font-bold text-gray-400 uppercase tracking-widest mb-2">Scholarship Test</span>
+                    <h4 class="text-xl font-bold text-primary mb-3">Scholarship Test (FSAT)</h4>
+                    <p class="text-sm text-gray-600 mb-6 leading-relaxed">Appear for FSAT and win up to 100% scholarship on tuition fees.</p>
+                    <div class="mt-auto pt-4 border-t border-gray-100 flex items-center justify-between">
+                        <a href="register.html" class="text-xs font-bold text-primary hover:text-secondary transition-colors flex items-center gap-2">Register Now <i data-lucide="arrow-right" class="w-3 h-3"></i></a>
+                        <div class="text-[9px] font-bold text-gray-400 uppercase">All Grades</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-16 text-center reveal-up">
+                <a href="courses.html" class="btn-outline glass sketchy-border px-10 py-4 inline-flex items-center gap-3 font-bold group">
+                    Explore All Courses 
+                    <i data-lucide="arrow-right" class="w-5 h-5 group-hover:translate-x-1 transition-transform"></i>
+                </a>
             </div>
         </div>
     </section>
@@ -349,55 +393,81 @@
                 </button>
             </div>
 
-            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6">
-                <div class="glass p-4 rounded-xl text-center border border-white/60 shadow-lg sketchy-border-sm reveal-up tape-effect-corner">
-                    <div class="w-24 h-24 mx-auto rounded-lg overflow-hidden mb-4 border-4 border-white shadow-md sketchy-border-sm">
-                        <img src="https://picsum.photos/seed/topper1/200/200" alt="Topper" class="w-full h-full object-cover">
+            <div class="overflow-x-auto no-scrollbar pb-8 -mx-6 px-6">
+                <div class="grid grid-rows-3 grid-flow-col gap-6 w-max">
+                    <div class="glass p-4 rounded-xl text-center border border-white/60 shadow-lg sketchy-border-sm reveal-up tape-effect-corner w-64">
+                        <div class="w-24 h-24 mx-auto rounded-lg overflow-hidden mb-4 border-4 border-white shadow-md sketchy-border-sm">
+                            <img src="https://picsum.photos/seed/topper1/200/200" alt="Topper" class="w-full h-full object-cover">
+                        </div>
+                        <h4 class="text-sm font-bold text-primary mb-1 truncate">Rahul Kumar</h4>
+                        <p class="text-secondary font-black text-lg leading-none mb-1">AIR 152</p>
+                        <p class="text-[10px] font-bold text-gray-400 uppercase tracking-tighter">JEE Advanced</p>
                     </div>
-                    <h4 class="text-sm font-bold text-primary mb-1 truncate">Rahul Kumar</h4>
-                    <p class="text-secondary font-black text-lg leading-none mb-1">AIR 152</p>
-                    <p class="text-[10px] font-bold text-gray-400 uppercase tracking-tighter">JEE Advanced</p>
-                </div>
-                <!-- More toppers... -->
-                <div class="glass p-4 rounded-xl text-center border border-white/60 shadow-lg sketchy-border-sm reveal-up tape-effect-corner" style="transition-delay: 100ms;">
-                    <div class="w-24 h-24 mx-auto rounded-lg overflow-hidden mb-4 border-4 border-white shadow-md sketchy-border-sm">
-                        <img src="https://picsum.photos/seed/topper2/200/200" alt="Topper" class="w-full h-full object-cover">
+                    <div class="glass p-4 rounded-xl text-center border border-white/60 shadow-lg sketchy-border-sm reveal-up tape-effect-corner w-64" style="transition-delay: 100ms;">
+                        <div class="w-24 h-24 mx-auto rounded-lg overflow-hidden mb-4 border-4 border-white shadow-md sketchy-border-sm">
+                            <img src="https://picsum.photos/seed/topper2/200/200" alt="Topper" class="w-full h-full object-cover">
+                        </div>
+                        <h4 class="text-sm font-bold text-primary mb-1 truncate">Sneha Singh</h4>
+                        <p class="text-secondary font-black text-lg leading-none mb-1">AIR 89</p>
+                        <p class="text-[10px] font-bold text-gray-400 uppercase tracking-tighter">NEET UG</p>
                     </div>
-                    <h4 class="text-sm font-bold text-primary mb-1 truncate">Sneha Singh</h4>
-                    <p class="text-secondary font-black text-lg leading-none mb-1">AIR 89</p>
-                    <p class="text-[10px] font-bold text-gray-400 uppercase tracking-tighter">NEET UG</p>
-                </div>
-                <div class="glass p-4 rounded-xl text-center border border-white/60 shadow-lg sketchy-border-sm reveal-up tape-effect-corner" style="transition-delay: 200ms;">
-                    <div class="w-24 h-24 mx-auto rounded-lg overflow-hidden mb-4 border-4 border-white shadow-md sketchy-border-sm">
-                        <img src="https://picsum.photos/seed/topper3/200/200" alt="Topper" class="w-full h-full object-cover">
+                    <div class="glass p-4 rounded-xl text-center border border-white/60 shadow-lg sketchy-border-sm reveal-up tape-effect-corner w-64" style="transition-delay: 200ms;">
+                        <div class="w-24 h-24 mx-auto rounded-lg overflow-hidden mb-4 border-4 border-white shadow-md sketchy-border-sm">
+                            <img src="https://picsum.photos/seed/topper3/200/200" alt="Topper" class="w-full h-full object-cover">
+                        </div>
+                        <h4 class="text-sm font-bold text-primary mb-1 truncate">Aryan Das</h4>
+                        <p class="text-secondary font-black text-lg leading-none mb-1">AIR 412</p>
+                        <p class="text-[10px] font-bold text-gray-400 uppercase tracking-tighter">JEE Main</p>
                     </div>
-                    <h4 class="text-sm font-bold text-primary mb-1 truncate">Aryan Das</h4>
-                    <p class="text-secondary font-black text-lg leading-none mb-1">AIR 412</p>
-                    <p class="text-[10px] font-bold text-gray-400 uppercase tracking-tighter">JEE Main</p>
-                </div>
-                <div class="glass p-4 rounded-xl text-center border border-white/60 shadow-lg sketchy-border-sm reveal-up tape-effect-corner" style="transition-delay: 300ms;">
-                    <div class="w-24 h-24 mx-auto rounded-lg overflow-hidden mb-4 border-4 border-white shadow-md sketchy-border-sm">
-                        <img src="https://picsum.photos/seed/topper4/200/200" alt="Topper" class="w-full h-full object-cover">
+                    <div class="glass p-4 rounded-xl text-center border border-white/60 shadow-lg sketchy-border-sm reveal-up tape-effect-corner w-64" style="transition-delay: 300ms;">
+                        <div class="w-24 h-24 mx-auto rounded-lg overflow-hidden mb-4 border-4 border-white shadow-md sketchy-border-sm">
+                            <img src="https://picsum.photos/seed/topper4/200/200" alt="Topper" class="w-full h-full object-cover">
+                        </div>
+                        <h4 class="text-sm font-bold text-primary mb-1 truncate">Priya Verma</h4>
+                        <p class="text-secondary font-black text-lg leading-none mb-1">98.5%</p>
+                        <p class="text-[10px] font-bold text-gray-400 uppercase tracking-tighter">CBSE Class 12</p>
                     </div>
-                    <h4 class="text-sm font-bold text-primary mb-1 truncate">Priya Verma</h4>
-                    <p class="text-secondary font-black text-lg leading-none mb-1">98.5%</p>
-                    <p class="text-[10px] font-bold text-gray-400 uppercase tracking-tighter">CBSE Class 12</p>
-                </div>
-                <div class="glass p-4 rounded-xl text-center border border-white/60 shadow-lg sketchy-border-sm reveal-up tape-effect-corner" style="transition-delay: 400ms;">
-                    <div class="w-24 h-24 mx-auto rounded-lg overflow-hidden mb-4 border-4 border-white shadow-md sketchy-border-sm">
-                        <img src="https://picsum.photos/seed/topper5/200/200" alt="Topper" class="w-full h-full object-cover">
+                    <div class="glass p-4 rounded-xl text-center border border-white/60 shadow-lg sketchy-border-sm reveal-up tape-effect-corner w-64" style="transition-delay: 400ms;">
+                        <div class="w-24 h-24 mx-auto rounded-lg overflow-hidden mb-4 border-4 border-white shadow-md sketchy-border-sm">
+                            <img src="https://picsum.photos/seed/topper5/200/200" alt="Topper" class="w-full h-full object-cover">
+                        </div>
+                        <h4 class="text-sm font-bold text-primary mb-1 truncate">Vikram Jha</h4>
+                        <p class="text-secondary font-black text-lg leading-none mb-1">AIR 105</p>
+                        <p class="text-[10px] font-bold text-gray-400 uppercase tracking-tighter">JEE Advanced</p>
                     </div>
-                    <h4 class="text-sm font-bold text-primary mb-1 truncate">Vikram Jha</h4>
-                    <p class="text-secondary font-black text-lg leading-none mb-1">AIR 105</p>
-                    <p class="text-[10px] font-bold text-gray-400 uppercase tracking-tighter">JEE Advanced</p>
-                </div>
-                <div class="glass p-4 rounded-xl text-center border border-white/60 shadow-lg sketchy-border-sm reveal-up tape-effect-corner" style="transition-delay: 500ms;">
-                    <div class="w-24 h-24 mx-auto rounded-lg overflow-hidden mb-4 border-4 border-white shadow-md sketchy-border-sm">
-                        <img src="https://picsum.photos/seed/topper6/200/200" alt="Topper" class="w-full h-full object-cover">
+                    <div class="glass p-4 rounded-xl text-center border border-white/60 shadow-lg sketchy-border-sm reveal-up tape-effect-corner w-64" style="transition-delay: 500ms;">
+                        <div class="w-24 h-24 mx-auto rounded-lg overflow-hidden mb-4 border-4 border-white shadow-md sketchy-border-sm">
+                            <img src="https://picsum.photos/seed/topper6/200/200" alt="Topper" class="w-full h-full object-cover">
+                        </div>
+                        <h4 class="text-sm font-bold text-primary mb-1 truncate">Ishita Roy</h4>
+                        <p class="text-secondary font-black text-lg leading-none mb-1">AIR 234</p>
+                        <p class="text-[10px] font-bold text-gray-400 uppercase tracking-tighter">NEET UG</p>
                     </div>
-                    <h4 class="text-sm font-bold text-primary mb-1 truncate">Ishita Roy</h4>
-                    <p class="text-secondary font-black text-lg leading-none mb-1">AIR 234</p>
-                    <p class="text-[10px] font-bold text-gray-400 uppercase tracking-tighter">NEET UG</p>
+                    <!-- Extra toppers for scrolling -->
+                    <div class="glass p-4 rounded-xl text-center border border-white/60 shadow-lg sketchy-border-sm reveal-up tape-effect-corner w-64" style="transition-delay: 600ms;">
+                        <div class="w-24 h-24 mx-auto rounded-lg overflow-hidden mb-4 border-4 border-white shadow-md sketchy-border-sm">
+                            <img src="https://picsum.photos/seed/topper7/200/200" alt="Topper" class="w-full h-full object-cover">
+                        </div>
+                        <h4 class="text-sm font-bold text-primary mb-1 truncate">Ananya Sen</h4>
+                        <p class="text-secondary font-black text-lg leading-none mb-1">AIR 567</p>
+                        <p class="text-[10px] font-bold text-gray-400 uppercase tracking-tighter">JEE Main</p>
+                    </div>
+                    <div class="glass p-4 rounded-xl text-center border border-white/60 shadow-lg sketchy-border-sm reveal-up tape-effect-corner w-64" style="transition-delay: 700ms;">
+                        <div class="w-24 h-24 mx-auto rounded-lg overflow-hidden mb-4 border-4 border-white shadow-md sketchy-border-sm">
+                            <img src="https://picsum.photos/seed/topper8/200/200" alt="Topper" class="w-full h-full object-cover">
+                        </div>
+                        <h4 class="text-sm font-bold text-primary mb-1 truncate">Rohan Mehra</h4>
+                        <p class="text-secondary font-black text-lg leading-none mb-1">97.2%</p>
+                        <p class="text-[10px] font-bold text-gray-400 uppercase tracking-tighter">ICSE Class 10</p>
+                    </div>
+                    <div class="glass p-4 rounded-xl text-center border border-white/60 shadow-lg sketchy-border-sm reveal-up tape-effect-corner w-64" style="transition-delay: 800ms;">
+                        <div class="w-24 h-24 mx-auto rounded-lg overflow-hidden mb-4 border-4 border-white shadow-md sketchy-border-sm">
+                            <img src="https://picsum.photos/seed/topper9/200/200" alt="Topper" class="w-full h-full object-cover">
+                        </div>
+                        <h4 class="text-sm font-bold text-primary mb-1 truncate">Sanya Gupta</h4>
+                        <p class="text-secondary font-black text-lg leading-none mb-1">AIR 312</p>
+                        <p class="text-[10px] font-bold text-gray-400 uppercase tracking-tighter">NEET UG</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -430,7 +500,7 @@
                             <span class="font-bold text-gray-800">Instant Doubt Resolution</span>
                         </li>
                     </ul>
-                    <button class="btn-primary sketchy-border py-4 px-10" onclick="window.location.href='register.html'">Try Demo Classes</button>
+                    <button class="btn-primary sketchy-border py-4 px-10" onclick="window.location.href='demo.html'">Try Demo Classes</button>
                 </div>
 
                 <div class="relative reveal-right">
@@ -506,108 +576,110 @@
                 <h3 class="text-3xl md:text-5xl font-extrabold text-primary">Meet Our Expert Faculty</h3>
             </div>
 
-            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6">
-                <div class="glass p-3 rounded-xl group sketchy-border reveal-up">
-                    <div class="rounded-lg overflow-hidden mb-4 aspect-square relative sketchy-border-sm">
-                        <img src="https://picsum.photos/seed/faculty1/400/400" alt="Faculty" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
-                    </div>
-                    <div class="px-2 pb-2">
-                        <h4 class="text-base font-bold text-primary mb-0.5">Dr. R.K. Sharma</h4>
-                        <p class="text-secondary font-bold text-[10px] mb-1.5">Physics Expert</p>
-                        <div class="flex items-center gap-1.5 text-gray-400 text-[9px] font-bold">
-                            <i data-lucide="clock" class="w-3 h-3"></i>
-                            <span>15+ Years Exp.</span>
+            <div class="overflow-x-auto no-scrollbar pb-8 -mx-6 px-6">
+                <div class="flex gap-6 w-max">
+                    <div class="glass p-3 rounded-xl group sketchy-border reveal-up w-64">
+                        <div class="rounded-lg overflow-hidden mb-4 aspect-square relative sketchy-border-sm">
+                            <img src="https://picsum.photos/seed/faculty1/400/400" alt="Faculty" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                        </div>
+                        <div class="px-2 pb-2">
+                            <h4 class="text-base font-bold text-primary mb-0.5">Dr. R.K. Sharma</h4>
+                            <p class="text-secondary font-bold text-[10px] mb-1.5">Physics Expert</p>
+                            <div class="flex items-center gap-1.5 text-gray-400 text-[9px] font-bold">
+                                <i data-lucide="clock" class="w-3 h-3"></i>
+                                <span>15+ Years Exp.</span>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="glass p-3 rounded-xl group sketchy-border reveal-up" style="transition-delay: 50ms;">
-                    <div class="rounded-lg overflow-hidden mb-4 aspect-square relative sketchy-border-sm">
-                        <img src="https://picsum.photos/seed/faculty2/400/400" alt="Faculty" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
-                    </div>
-                    <div class="px-2 pb-2">
-                        <h4 class="text-base font-bold text-primary mb-0.5">Prof. S. Verma</h4>
-                        <p class="text-secondary font-bold text-[10px] mb-1.5">Mathematics Guru</p>
-                        <div class="flex items-center gap-1.5 text-gray-400 text-[9px] font-bold">
-                            <i data-lucide="clock" class="w-3 h-3"></i>
-                            <span>12+ Years Exp.</span>
+                    <div class="glass p-3 rounded-xl group sketchy-border reveal-up w-64" style="transition-delay: 50ms;">
+                        <div class="rounded-lg overflow-hidden mb-4 aspect-square relative sketchy-border-sm">
+                            <img src="https://picsum.photos/seed/faculty2/400/400" alt="Faculty" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                        </div>
+                        <div class="px-2 pb-2">
+                            <h4 class="text-base font-bold text-primary mb-0.5">Prof. S. Verma</h4>
+                            <p class="text-secondary font-bold text-[10px] mb-1.5">Mathematics Guru</p>
+                            <div class="flex items-center gap-1.5 text-gray-400 text-[9px] font-bold">
+                                <i data-lucide="clock" class="w-3 h-3"></i>
+                                <span>12+ Years Exp.</span>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="glass p-3 rounded-xl group sketchy-border reveal-up" style="transition-delay: 100ms;">
-                    <div class="rounded-lg overflow-hidden mb-4 aspect-square relative sketchy-border-sm">
-                        <img src="https://picsum.photos/seed/faculty3/400/400" alt="Faculty" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
-                    </div>
-                    <div class="px-2 pb-2">
-                        <h4 class="text-base font-bold text-primary mb-0.5">Dr. Anjali Singh</h4>
-                        <p class="text-secondary font-bold text-[10px] mb-1.5">Biology Specialist</p>
-                        <div class="flex items-center gap-1.5 text-gray-400 text-[9px] font-bold">
-                            <i data-lucide="clock" class="w-3 h-3"></i>
-                            <span>10+ Years Exp.</span>
+                    <div class="glass p-3 rounded-xl group sketchy-border reveal-up w-64" style="transition-delay: 100ms;">
+                        <div class="rounded-lg overflow-hidden mb-4 aspect-square relative sketchy-border-sm">
+                            <img src="https://picsum.photos/seed/faculty3/400/400" alt="Faculty" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                        </div>
+                        <div class="px-2 pb-2">
+                            <h4 class="text-base font-bold text-primary mb-0.5">Dr. Anjali Singh</h4>
+                            <p class="text-secondary font-bold text-[10px] mb-1.5">Biology Specialist</p>
+                            <div class="flex items-center gap-1.5 text-gray-400 text-[9px] font-bold">
+                                <i data-lucide="clock" class="w-3 h-3"></i>
+                                <span>10+ Years Exp.</span>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="glass p-3 rounded-xl group sketchy-border reveal-up" style="transition-delay: 150ms;">
-                    <div class="rounded-lg overflow-hidden mb-4 aspect-square relative sketchy-border-sm">
-                        <img src="https://picsum.photos/seed/faculty4/400/400" alt="Faculty" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
-                    </div>
-                    <div class="px-2 pb-2">
-                        <h4 class="text-base font-bold text-primary mb-0.5">Mr. Amit Das</h4>
-                        <p class="text-secondary font-bold text-[10px] mb-1.5">Chemistry Head</p>
-                        <div class="flex items-center gap-1.5 text-gray-400 text-[9px] font-bold">
-                            <i data-lucide="clock" class="w-3 h-3"></i>
-                            <span>14+ Years Exp.</span>
+                    <div class="glass p-3 rounded-xl group sketchy-border reveal-up w-64" style="transition-delay: 150ms;">
+                        <div class="rounded-lg overflow-hidden mb-4 aspect-square relative sketchy-border-sm">
+                            <img src="https://picsum.photos/seed/faculty4/400/400" alt="Faculty" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                        </div>
+                        <div class="px-2 pb-2">
+                            <h4 class="text-base font-bold text-primary mb-0.5">Mr. Amit Das</h4>
+                            <p class="text-secondary font-bold text-[10px] mb-1.5">Chemistry Head</p>
+                            <div class="flex items-center gap-1.5 text-gray-400 text-[9px] font-bold">
+                                <i data-lucide="clock" class="w-3 h-3"></i>
+                                <span>14+ Years Exp.</span>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="glass p-3 rounded-xl group sketchy-border reveal-up" style="transition-delay: 200ms;">
-                    <div class="rounded-lg overflow-hidden mb-4 aspect-square relative sketchy-border-sm">
-                        <img src="https://picsum.photos/seed/faculty5/400/400" alt="Faculty" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
-                    </div>
-                    <div class="px-2 pb-2">
-                        <h4 class="text-base font-bold text-primary mb-0.5">Dr. P.K. Mishra</h4>
-                        <p class="text-secondary font-bold text-[10px] mb-1.5">Organic Chemistry</p>
-                        <div class="flex items-center gap-1.5 text-gray-400 text-[9px] font-bold">
-                            <i data-lucide="clock" class="w-3 h-3"></i>
-                            <span>18+ Years Exp.</span>
+                    <div class="glass p-3 rounded-xl group sketchy-border reveal-up w-64" style="transition-delay: 200ms;">
+                        <div class="rounded-lg overflow-hidden mb-4 aspect-square relative sketchy-border-sm">
+                            <img src="https://picsum.photos/seed/faculty5/400/400" alt="Faculty" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                        </div>
+                        <div class="px-2 pb-2">
+                            <h4 class="text-base font-bold text-primary mb-0.5">Dr. P.K. Mishra</h4>
+                            <p class="text-secondary font-bold text-[10px] mb-1.5">Organic Chemistry</p>
+                            <div class="flex items-center gap-1.5 text-gray-400 text-[9px] font-bold">
+                                <i data-lucide="clock" class="w-3 h-3"></i>
+                                <span>18+ Years Exp.</span>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="glass p-3 rounded-xl group sketchy-border reveal-up" style="transition-delay: 250ms;">
-                    <div class="rounded-lg overflow-hidden mb-4 aspect-square relative sketchy-border-sm">
-                        <img src="https://picsum.photos/seed/faculty6/400/400" alt="Faculty" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
-                    </div>
-                    <div class="px-2 pb-2">
-                        <h4 class="text-base font-bold text-primary mb-0.5">Prof. V. Gupta</h4>
-                        <p class="text-secondary font-bold text-[10px] mb-1.5">Botany Expert</p>
-                        <div class="flex items-center gap-1.5 text-gray-400 text-[9px] font-bold">
-                            <i data-lucide="clock" class="w-3 h-3"></i>
-                            <span>11+ Years Exp.</span>
+                    <div class="glass p-3 rounded-xl group sketchy-border reveal-up w-64" style="transition-delay: 250ms;">
+                        <div class="rounded-lg overflow-hidden mb-4 aspect-square relative sketchy-border-sm">
+                            <img src="https://picsum.photos/seed/faculty6/400/400" alt="Faculty" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                        </div>
+                        <div class="px-2 pb-2">
+                            <h4 class="text-base font-bold text-primary mb-0.5">Prof. V. Gupta</h4>
+                            <p class="text-secondary font-bold text-[10px] mb-1.5">Botany Expert</p>
+                            <div class="flex items-center gap-1.5 text-gray-400 text-[9px] font-bold">
+                                <i data-lucide="clock" class="w-3 h-3"></i>
+                                <span>11+ Years Exp.</span>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="glass p-3 rounded-xl group sketchy-border reveal-up" style="transition-delay: 300ms;">
-                    <div class="rounded-lg overflow-hidden mb-4 aspect-square relative sketchy-border-sm">
-                        <img src="https://picsum.photos/seed/faculty7/400/400" alt="Faculty" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
-                    </div>
-                    <div class="px-2 pb-2">
-                        <h4 class="text-base font-bold text-primary mb-0.5">Mr. S.K. Roy</h4>
-                        <p class="text-secondary font-bold text-[10px] mb-1.5">Inorganic Chemistry</p>
-                        <div class="flex items-center gap-1.5 text-gray-400 text-[9px] font-bold">
-                            <i data-lucide="clock" class="w-3 h-3"></i>
-                            <span>13+ Years Exp.</span>
+                    <div class="glass p-3 rounded-xl group sketchy-border reveal-up w-64" style="transition-delay: 300ms;">
+                        <div class="rounded-lg overflow-hidden mb-4 aspect-square relative sketchy-border-sm">
+                            <img src="https://picsum.photos/seed/faculty7/400/400" alt="Faculty" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                        </div>
+                        <div class="px-2 pb-2">
+                            <h4 class="text-base font-bold text-primary mb-0.5">Mr. S.K. Roy</h4>
+                            <p class="text-secondary font-bold text-[10px] mb-1.5">Inorganic Chemistry</p>
+                            <div class="flex items-center gap-1.5 text-gray-400 text-[9px] font-bold">
+                                <i data-lucide="clock" class="w-3 h-3"></i>
+                                <span>13+ Years Exp.</span>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="glass p-3 rounded-xl group sketchy-border reveal-up" style="transition-delay: 350ms;">
-                    <div class="rounded-lg overflow-hidden mb-4 aspect-square relative sketchy-border-sm">
-                        <img src="https://picsum.photos/seed/faculty8/400/400" alt="Faculty" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
-                    </div>
-                    <div class="px-2 pb-2">
-                        <h4 class="text-base font-bold text-primary mb-0.5">Dr. Neha Jha</h4>
-                        <p class="text-secondary font-bold text-[10px] mb-1.5">Zoology Specialist</p>
-                        <div class="flex items-center gap-1.5 text-gray-400 text-[9px] font-bold">
-                            <i data-lucide="clock" class="w-3 h-3"></i>
-                            <span>9+ Years Exp.</span>
+                    <div class="glass p-3 rounded-xl group sketchy-border reveal-up w-64" style="transition-delay: 350ms;">
+                        <div class="rounded-lg overflow-hidden mb-4 aspect-square relative sketchy-border-sm">
+                            <img src="https://picsum.photos/seed/faculty8/400/400" alt="Faculty" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                        </div>
+                        <div class="px-2 pb-2">
+                            <h4 class="text-base font-bold text-primary mb-0.5">Dr. Neha Jha</h4>
+                            <p class="text-secondary font-bold text-[10px] mb-1.5">Zoology Specialist</p>
+                            <div class="flex items-center gap-1.5 text-gray-400 text-[9px] font-bold">
+                                <i data-lucide="clock" class="w-3 h-3"></i>
+                                <span>9+ Years Exp.</span>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -771,6 +843,103 @@
         </div>
     </section>
 
+    <!-- Results/Toppers Section -->
+    <section id="results" class="py-24 relative overflow-hidden">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-6">
+                <div class="reveal-left">
+                    <h2 class="text-5xl md:text-7xl font-black text-primary tracking-tighter mb-4">
+                        Our <span class="text-secondary italic">Champions</span>
+                    </h2>
+                    <p class="text-xl text-gray-600 font-medium">Celebrating the hard work and success of our students.</p>
+                </div>
+                <div class="reveal-right">
+                    <div class="glass p-4 rounded-2xl sketchy-border-sm flex items-center gap-4">
+                        <div class="text-right">
+                            <p class="text-2xl font-black text-primary">95%</p>
+                            <p class="text-[10px] font-bold uppercase text-gray-400">Success Rate</p>
+                        </div>
+                        <div class="w-px h-10 bg-gray-200"></div>
+                        <div>
+                            <p class="text-2xl font-black text-secondary">500+</p>
+                            <p class="text-[10px] font-bold uppercase text-gray-400">Selections</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Topper 1 -->
+                <div class="reveal-up">
+                    <div class="glass p-4 rounded-[2rem] border border-white/60 shadow-xl sketchy-border group hover:-translate-y-2 transition-all duration-500 tape-effect">
+                        <div class="relative rounded-2xl overflow-hidden mb-6 aspect-[4/5]">
+                            <img src="https://picsum.photos/seed/student1/400/500" alt="Topper" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700" referrerPolicy="no-referrer">
+                            <div class="absolute top-4 right-4 bg-accent text-primary font-black px-3 py-1 rounded-lg text-xs sketchy-border-sm">AIR 452</div>
+                        </div>
+                        <h4 class="text-xl font-bold text-primary mb-1">Aditya Sharma</h4>
+                        <p class="text-sm font-bold text-secondary mb-3">JEE Advanced 2025</p>
+                        <div class="pt-3 border-t border-gray-100 flex justify-between items-center">
+                            <span class="text-[10px] font-bold text-gray-400 uppercase">Loyola School</span>
+                            <i data-lucide="award" class="w-4 h-4 text-accent"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Topper 2 -->
+                <div class="reveal-up" style="transition-delay: 100ms;">
+                    <div class="glass p-4 rounded-[2rem] border border-white/60 shadow-xl sketchy-border group hover:-translate-y-2 transition-all duration-500 pin-effect">
+                        <div class="relative rounded-2xl overflow-hidden mb-6 aspect-[4/5]">
+                            <img src="https://picsum.photos/seed/student2/400/500" alt="Topper" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700" referrerPolicy="no-referrer">
+                            <div class="absolute top-4 right-4 bg-accent text-primary font-black px-3 py-1 rounded-lg text-xs sketchy-border-sm">685/720</div>
+                        </div>
+                        <h4 class="text-xl font-bold text-primary mb-1">Priya Singh</h4>
+                        <p class="text-sm font-bold text-secondary mb-3">NEET 2025</p>
+                        <div class="pt-3 border-t border-gray-100 flex justify-between items-center">
+                            <span class="text-[10px] font-bold text-gray-400 uppercase">Sacred Heart</span>
+                            <i data-lucide="award" class="w-4 h-4 text-accent"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Topper 3 -->
+                <div class="reveal-up" style="transition-delay: 200ms;">
+                    <div class="glass p-4 rounded-[2rem] border border-white/60 shadow-xl sketchy-border group hover:-translate-y-2 transition-all duration-500 tape-effect">
+                        <div class="relative rounded-2xl overflow-hidden mb-6 aspect-[4/5]">
+                            <img src="https://picsum.photos/seed/student3/400/500" alt="Topper" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700" referrerPolicy="no-referrer">
+                            <div class="absolute top-4 right-4 bg-accent text-primary font-black px-3 py-1 rounded-lg text-xs sketchy-border-sm">98.2%</div>
+                        </div>
+                        <h4 class="text-xl font-bold text-primary mb-1">Rohan Verma</h4>
+                        <p class="text-sm font-bold text-secondary mb-3">CBSE Class 12th</p>
+                        <div class="pt-3 border-t border-gray-100 flex justify-between items-center">
+                            <span class="text-[10px] font-bold text-gray-400 uppercase">DPS Jamshedpur</span>
+                            <i data-lucide="award" class="w-4 h-4 text-accent"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Topper 4 -->
+                <div class="reveal-up" style="transition-delay: 300ms;">
+                    <div class="glass p-4 rounded-[2rem] border border-white/60 shadow-xl sketchy-border group hover:-translate-y-2 transition-all duration-500 pin-effect">
+                        <div class="relative rounded-2xl overflow-hidden mb-6 aspect-[4/5]">
+                            <img src="https://picsum.photos/seed/student4/400/500" alt="Topper" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700" referrerPolicy="no-referrer">
+                            <div class="absolute top-4 right-4 bg-accent text-primary font-black px-3 py-1 rounded-lg text-xs sketchy-border-sm">AIR 1205</div>
+                        </div>
+                        <h4 class="text-xl font-bold text-primary mb-1">Ishita Das</h4>
+                        <p class="text-sm font-bold text-secondary mb-3">JEE Main 2025</p>
+                        <div class="pt-3 border-t border-gray-100 flex justify-between items-center">
+                            <span class="text-[10px] font-bold text-gray-400 uppercase">Hill Top School</span>
+                            <i data-lucide="award" class="w-4 h-4 text-accent"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mt-16 text-center reveal-up">
+                <button class="btn-outline sketchy-border py-4 px-10" onclick="window.location.href='gallery.html'">View All Results</button>
+            </div>
+        </div>
+    </section>
+
     <!-- Contact Section -->
     <section id="contact" class="py-24 bg-white relative overflow-hidden">
         <div class="max-w-7xl mx-auto px-6 relative z-10">
@@ -796,9 +965,14 @@
                             <div class="w-12 h-12 glass rounded-2xl shadow-sm flex items-center justify-center shrink-0 border border-white/60 sketchy-border-sm">
                                 <i data-lucide="phone" class="text-primary"></i>
                             </div>
-                            <div>
-                                <h4 class="font-bold text-gray-900">Call Us</h4>
-                                <p class="text-gray-600">+91 91234 56789</p>
+                            <div class="flex-1">
+                                <h4 class="font-bold text-gray-900">Call or WhatsApp</h4>
+                                <div class="flex items-center gap-4">
+                                    <p class="text-gray-600">+91 91234 56789</p>
+                                    <a href="https://wa.me/919123456789" target="_blank" class="flex items-center gap-1.5 bg-green-500 text-white px-3 py-1 rounded-full text-[10px] font-bold uppercase tracking-wider hover:bg-green-600 transition-colors shadow-sm">
+                                        <i data-lucide="message-circle" class="w-3 h-3"></i> WhatsApp
+                                    </a>
+                                </div>
                             </div>
                         </div>
                         <div class="flex gap-5">
@@ -843,6 +1017,15 @@
                 </div>
 
                 <div class="glass p-8 md:p-12 rounded-[2.5rem] shadow-2xl border border-white/60 sketchy-border reveal-right">
+                    <div class="mb-8 rounded-2xl overflow-hidden sketchy-border-sm h-64 grayscale hover:grayscale-0 transition-all duration-700">
+                        <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3678.84752494165!2d86.2123!3d22.7754!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f5e31989f0e2b3%3A0x6728b9394f1b294!2sParsudih%2C%20Jamshedpur%2C%20Jharkhand!5e0!3m2!1sen!2sin!4v1710150000000!5m2!1sen!2sin" 
+                            class="w-full h-full border-0" 
+                            allowfullscreen="" 
+                            loading="lazy" 
+                            referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
                     <form id="contact-form" class="space-y-5">
                         <div class="grid sm:grid-cols-2 gap-5">
                             <input required type="text" placeholder="Your Name" class="w-full px-5 py-3.5 rounded-2xl bg-white/50 border border-white/40 focus:border-primary outline-none transition-all backdrop-blur-md sketchy-border-sm">
@@ -879,6 +1062,17 @@
                         <a href="#" class="w-10 h-10 rounded-lg bg-white/10 flex items-center justify-center transition-all sketchy-border-sm hover:bg-secondary"><i data-lucide="instagram" class="w-5 h-5"></i></a>
                         <a href="#" class="w-10 h-10 rounded-lg bg-white/10 flex items-center justify-center transition-all sketchy-border-sm hover:bg-secondary"><i data-lucide="youtube" class="w-5 h-5"></i></a>
                     </div>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-bold mb-6">Quick Links</h4>
+                    <ul class="space-y-4 text-white/60">
+                        <li><a href="index.html" class="hover:text-white transition-colors">Home</a></li>
+                        <li><a href="courses.html" class="hover:text-white transition-colors">Courses</a></li>
+                        <li><a href="gallery.html" class="hover:text-white transition-colors">Gallery</a></li>
+                        <li><a href="#about" class="hover:text-white transition-colors">About</a></li>
+                        <li><a href="#results" class="hover:text-white transition-colors">Results</a></li>
+                    </ul>
                 </div>
                 
                 <div>

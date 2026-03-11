@@ -1,21 +1,27 @@
 // Initialize Lucide Icons
-lucide.createIcons();
+if (typeof lucide !== 'undefined') {
+    lucide.createIcons();
+}
 
 // Mobile Menu Toggle
 const mobileMenuToggle = document.getElementById('mobile-menu-toggle');
 const mobileMenu = document.getElementById('mobile-menu');
 
-mobileMenuToggle.addEventListener('click', () => {
-    mobileMenu.classList.toggle('hidden');
-});
+if (mobileMenuToggle && mobileMenu) {
+    mobileMenuToggle.addEventListener('click', () => {
+        mobileMenu.classList.toggle('hidden');
+    });
+}
 
 // Navbar Scroll Effect
 const navbar = document.getElementById('navbar');
 window.addEventListener('scroll', () => {
-    if (window.scrollY > 20) {
-        navbar.classList.add('navbar-scrolled');
-    } else {
-        navbar.classList.remove('navbar-scrolled');
+    if (navbar) {
+        if (window.scrollY > 20) {
+            navbar.classList.add('navbar-scrolled');
+        } else {
+            navbar.classList.remove('navbar-scrolled');
+        }
     }
 });
 
@@ -41,12 +47,21 @@ const checkInitialReveal = () => {
         // If element is in viewport or above it, reveal it
         if (rect.top < window.innerHeight) {
             el.classList.add('reveal-visible');
-            revealObserver.unobserve(el);
+            if (revealObserver) revealObserver.unobserve(el);
         } else {
-            revealObserver.observe(el);
+            if (revealObserver) revealObserver.observe(el);
         }
     });
 };
+
+// Safety fallback: reveal everything after 2 seconds if still hidden
+setTimeout(() => {
+    revealElements.forEach(el => {
+        if (!el.classList.contains('reveal-visible')) {
+            el.classList.add('reveal-visible');
+        }
+    });
+}, 2000);
 
 // Run on DOMContentLoaded and also on window load for safety
 document.addEventListener('DOMContentLoaded', checkInitialReveal);

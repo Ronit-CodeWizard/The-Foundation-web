@@ -1,6 +1,7 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
+<html lang="en" class="scroll-smooth no-js">
 <head>
+    <script>document.documentElement.classList.remove('no-js');</script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registration 2026 | The Foundation</title>
@@ -57,6 +58,20 @@
     <!-- Graffiti Background -->
     <div class="graffiti-bg"></div>
 
+    <!-- News Ticker -->
+    <div class="bg-primary text-white py-2 overflow-hidden relative z-[60]">
+        <div class="flex whitespace-nowrap animate-marquee">
+            <div class="flex items-center gap-8 px-8 border-r border-white/10">
+                <span class="text-xs font-bold uppercase tracking-wider">Admission Open for Session 2026-27 | JEE & NEET Batches Starting April 15th</span>
+                <span class="text-xs font-bold uppercase tracking-wider">FSAT Scholarship Test scheduled for March 25th</span>
+            </div>
+            <div class="flex items-center gap-8 px-8 border-r border-white/10">
+                <span class="text-xs font-bold uppercase tracking-wider">Admission Open for Session 2026-27 | JEE & NEET Batches Starting April 15th</span>
+                <span class="text-xs font-bold uppercase tracking-wider">FSAT Scholarship Test scheduled for March 25th</span>
+            </div>
+        </div>
+    </div>
+
     <!-- Header -->
     <header class="glass sticky top-0 z-50 border-b border-white/20 py-4">
         <div class="max-w-7xl mx-auto px-6 flex items-center justify-between gap-4">
@@ -73,15 +88,21 @@
                 </a>
             </div>
             
-            <div class="hidden lg:flex items-center gap-4 text-[10px] font-bold uppercase tracking-widest text-gray-500">
-                <div class="flex items-center gap-1.5">
-                    <i data-lucide="map-pin" class="w-3 h-3 text-secondary"></i>
-                    <span>Parsudih, Jamshedpur</span>
-                </div>
-                <div class="w-1 h-1 bg-gray-300 rounded-full"></div>
-                <div class="flex items-center gap-1.5">
-                    <i data-lucide="graduation-cap" class="w-3 h-3 text-primary"></i>
-                    <span>Grades 4–12</span>
+            <div class="hidden lg:flex items-center gap-8">
+                <a href="index.html" class="text-sm font-semibold text-gray-700 hover:text-primary transition-colors">Home</a>
+                <a href="courses.html" class="text-sm font-semibold text-gray-700 hover:text-primary transition-colors">Courses</a>
+                <a href="index.html#about" class="text-sm font-semibold text-gray-700 hover:text-primary transition-colors">About</a>
+                <div class="w-px h-4 bg-gray-200"></div>
+                <div class="flex items-center gap-4 text-[10px] font-bold uppercase tracking-widest text-gray-500">
+                    <div class="flex items-center gap-1.5">
+                        <i data-lucide="map-pin" class="w-3 h-3 text-secondary"></i>
+                        <span>Parsudih, Jamshedpur</span>
+                    </div>
+                    <div class="w-1 h-1 bg-gray-300 rounded-full"></div>
+                    <div class="flex items-center gap-1.5">
+                        <i data-lucide="graduation-cap" class="w-3 h-3 text-primary"></i>
+                        <span>Grades 4–12</span>
+                    </div>
                 </div>
             </div>
         </div>
@@ -375,16 +396,57 @@
         </div>
     </main>
 
-    <footer class="bg-primary py-12 text-center font-sans">
-        <div class="flex justify-center gap-4 mb-6">
-            <a href="#" class="w-10 h-10 rounded-lg glass flex items-center justify-center text-white hover:bg-white hover:text-primary transition-all sketchy-border-sm">
-                <i data-lucide="instagram" class="w-5 h-5"></i>
-            </a>
-            <a href="#" class="w-10 h-10 rounded-lg glass flex items-center justify-center text-white hover:bg-white hover:text-primary transition-all sketchy-border-sm">
-                <i data-lucide="facebook" class="w-5 h-5"></i>
-            </a>
+    <!-- Footer -->
+    <footer class="bg-primary text-white pt-20 pb-10 relative overflow-hidden border-t border-white/10">
+        <div class="max-w-7xl mx-auto px-6 relative z-10">
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
+                <div class="sm:col-span-2 lg:col-span-2">
+                    <div class="flex items-center gap-3 mb-6">
+                        <img src="https://i.supaimg.com/92f82b8e-0941-4720-9455-b7257d1262f2/b454a010-4f77-468c-b71b-528723aaeb66.png" class="h-10 w-auto object-contain logo-multiply bg-white rounded-lg p-1" alt="The Foundation Logo" referrerPolicy="no-referrer">
+                        <span class="text-2xl font-extrabold font-thalia text-white">The Foundation</span>
+                    </div>
+                    <p class="text-white/60 max-w-sm mb-8 leading-relaxed">
+                        Empowering students in Jamshedpur with quality education and mentorship since 2019. Join us to create the life you love.
+                    </p>
+                    <div class="flex gap-4">
+                        <a href="#" class="w-10 h-10 rounded-lg bg-white/10 flex items-center justify-center transition-all sketchy-border-sm hover:bg-secondary text-white"><i data-lucide="facebook" class="w-5 h-5"></i></a>
+                        <a href="#" class="w-10 h-10 rounded-lg bg-white/10 flex items-center justify-center transition-all sketchy-border-sm hover:bg-secondary text-white"><i data-lucide="instagram" class="w-5 h-5"></i></a>
+                        <a href="#" class="w-10 h-10 rounded-lg bg-white/10 flex items-center justify-center transition-all sketchy-border-sm hover:bg-secondary text-white"><i data-lucide="youtube" class="w-5 h-5"></i></a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-bold mb-6 text-white">Quick Links</h4>
+                    <ul class="space-y-4 text-white/60">
+                        <li><a href="index.html" class="hover:text-white transition-colors">Home</a></li>
+                        <li><a href="courses.html" class="hover:text-white transition-colors">Courses</a></li>
+                        <li><a href="index.html#about" class="hover:text-white transition-colors">About</a></li>
+                        <li><a href="index.html#results" class="hover:text-white transition-colors">Results</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-bold mb-6 text-white">Support</h4>
+                    <ul class="space-y-4 text-white/60">
+                        <li><a href="#" class="hover:text-white transition-colors">Admission Help</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Scholarships</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">FAQ</a></li>
+                    </ul>
+                </div>
+                
+                <div class="sm:col-span-2 lg:col-span-1">
+                    <h4 class="text-lg font-bold mb-6 text-white">Stay Updated</h4>
+                    <form class="flex gap-2">
+                        <input type="email" required placeholder="Your email" class="flex-1 px-4 py-2 bg-white/10 border border-white/20 rounded-xl outline-none text-sm sketchy-border-sm text-white">
+                        <button type="submit" class="bg-accent text-primary px-4 py-2 rounded-xl font-bold text-xs sketchy-border-sm">Join</button>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="pt-10 border-t border-white/10 text-center text-sm text-white/40">
+                <p>© 2026 The Foundation Jamshedpur. All Rights Reserved.</p>
+            </div>
         </div>
-        <p class="text-[10px] font-bold text-white/40 uppercase tracking-[0.3em]">© 2026 The Foundation Jamshedpur. All Rights Reserved.</p>
     </footer>
 
     <script src="register.js"></script>

@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth no-js">
+<head>
+    <script>document.documentElement.classList.remove('no-js');</script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Demo Class | The Foundation</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="style.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#0d1658',
+                        secondary: '#e01b29',
+                        accent: '#f8be06',
+                        surface: '#f8f9fa',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    <style>
+        .custom-dropdown-menu { display: none; }
+        .custom-dropdown-menu.active { display: block; }
+    </style>
+</head>
+<body class="bg-white text-gray-900 font-sans antialiased selection:bg-primary selection:text-white overflow-x-hidden min-h-screen flex flex-col">
+
+    <!-- Graffiti Background -->
+    <div class="graffiti-bg"></div>
+
+    <!-- News Ticker -->
+    <div class="bg-primary text-white py-2 overflow-hidden relative z-[60]">
+        <div class="flex whitespace-nowrap animate-marquee">
+            <div class="flex items-center gap-8 px-8 border-r border-white/10">
+                <span class="text-xs font-bold uppercase tracking-wider">Admission Open for Session 2026-27 | JEE & NEET Batches Starting April 15th</span>
+                <span class="text-xs font-bold uppercase tracking-wider">FSAT Scholarship Test scheduled for March 25th</span>
+            </div>
+            <div class="flex items-center gap-8 px-8 border-r border-white/10">
+                <span class="text-xs font-bold uppercase tracking-wider">Admission Open for Session 2026-27 | JEE & NEET Batches Starting April 15th</span>
+                <span class="text-xs font-bold uppercase tracking-wider">FSAT Scholarship Test scheduled for March 25th</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="glass sticky top-0 z-50 border-b border-white/20 py-4">
+        <div class="max-w-7xl mx-auto px-6 flex items-center justify-between gap-4">
+            <div class="flex items-center gap-6">
+                <a href="index.html" class="w-10 h-10 rounded-xl glass flex items-center justify-center text-primary hover:bg-primary hover:text-white transition-all sketchy-border-sm" title="Back to Home">
+                    <i data-lucide="arrow-left" class="w-5 h-5"></i>
+                </a>
+                <a href="index.html" class="flex items-center gap-3 group">
+                    <img src="https://i.supaimg.com/92f82b8e-0941-4720-9455-b7257d1262f2/b454a010-4f77-468c-b71b-528723aaeb66.png" class="h-10 w-auto object-contain logo-multiply group-hover:scale-110 transition-transform" alt="Logo">
+                    <div class="flex flex-col leading-none">
+                        <span class="text-2xl font-extrabold text-primary font-thalia">The Foundation</span>
+                        <span class="text-[8px] font-bold tracking-[0.2em] uppercase text-secondary">Book Demo Class</span>
+                    </div>
+                </a>
+            </div>
+            
+            <div class="hidden lg:flex items-center gap-8">
+                <a href="index.html" class="text-sm font-semibold text-gray-700 hover:text-primary transition-colors">Home</a>
+                <a href="courses.html" class="text-sm font-semibold text-gray-700 hover:text-primary transition-colors">Courses</a>
+                <a href="gallery.html" class="text-sm font-semibold text-gray-700 hover:text-primary transition-colors">Gallery</a>
+                <a href="index.html#about" class="text-sm font-semibold text-gray-700 hover:text-primary transition-colors">About</a>
+            </div>
+        </div>
+    </header>
+
+    <main class="flex-1 mesh-gradient py-12 px-6 relative overflow-hidden">
+        <!-- Doodles -->
+        <div class="doodle top-40 -left-10 rotate-45">
+            <i data-lucide="calendar" class="w-24 h-24 text-primary"></i>
+        </div>
+        <div class="doodle bottom-40 -right-10 -rotate-12">
+            <i data-lucide="users" class="w-32 h-32 text-accent"></i>
+        </div>
+
+        <div class="max-w-2xl mx-auto relative z-10">
+            <div class="glass p-8 md:p-12 rounded-xl shadow-2xl border border-white/60 sketchy-border relative tape-effect" id="form-container">
+                <div id="demo-form-content">
+                    <div class="mb-8">
+                        <h2 class="text-3xl font-black text-primary mb-2 tracking-tighter">Request a Demo</h2>
+                        <p class="text-sm text-gray-500 font-medium">Experience our teaching methodology firsthand.</p>
+                    </div>
+
+                    <form id="demo-form" class="space-y-6">
+                        <div class="grid md:grid-cols-2 gap-6">
+                            <!-- Student Name -->
+                            <div class="space-y-2">
+                                <label class="text-[10px] font-bold uppercase tracking-widest text-gray-400 ml-2">Student Name</label>
+                                <input required type="text" name="studentName" placeholder="Full Name" class="w-full px-6 py-4 rounded-lg bg-white/50 border border-white/40 focus:border-primary outline-none transition-all backdrop-blur-md sketchy-border-sm">
+                            </div>
+                            <!-- Guardian Name -->
+                            <div class="space-y-2">
+                                <label class="text-[10px] font-bold uppercase tracking-widest text-gray-400 ml-2">Guardian Name</label>
+                                <input required type="text" name="guardianName" placeholder="Father/Mother Name" class="w-full px-6 py-4 rounded-lg bg-white/50 border border-white/40 focus:border-primary outline-none transition-all backdrop-blur-md sketchy-border-sm">
+                            </div>
+                        </div>
+
+                        <div class="grid md:grid-cols-3 gap-6">
+                            <!-- Class Select -->
+                            <div class="space-y-2">
+                                <label class="text-[10px] font-bold uppercase tracking-widest text-gray-400 ml-2">Class</label>
+                                <select required name="class" class="w-full px-6 py-4 rounded-lg bg-white/50 border border-white/40 focus:border-primary outline-none transition-all backdrop-blur-md sketchy-border-sm appearance-none">
+                                    <option value="" disabled selected>Select Class</option>
+                                    <option value="4">Class 4</option>
+                                    <option value="5">Class 5</option>
+                                    <option value="6">Class 6</option>
+                                    <option value="7">Class 7</option>
+                                    <option value="8">Class 8</option>
+                                    <option value="9">Class 9</option>
+                                    <option value="10">Class 10</option>
+                                    <option value="11">Class 11</option>
+                                    <option value="12">Class 12</option>
+                                </select>
+                            </div>
+                            <!-- Board Select -->
+                            <div class="space-y-2">
+                                <label class="text-[10px] font-bold uppercase tracking-widest text-gray-400 ml-2">Board</label>
+                                <select required name="board" class="w-full px-6 py-4 rounded-lg bg-white/50 border border-white/40 focus:border-primary outline-none transition-all backdrop-blur-md sketchy-border-sm appearance-none">
+                                    <option value="" disabled selected>Select Board</option>
+                                    <option value="CBSE">CBSE</option>
+                                    <option value="ICSE">ICSE</option>
+                                    <option value="JAC">JAC (Jharkhand Board)</option>
+                                    <option value="Other">Other</option>
+                                </select>
+                            </div>
+                            <!-- Course Select -->
+                            <div class="space-y-2">
+                                <label class="text-[10px] font-bold uppercase tracking-widest text-gray-400 ml-2">Course</label>
+                                <select required name="course" class="w-full px-6 py-4 rounded-lg bg-white/50 border border-white/40 focus:border-primary outline-none transition-all backdrop-blur-md sketchy-border-sm appearance-none">
+                                    <option value="" disabled selected>Select Course</option>
+                                    <option value="Schooling">Schooling</option>
+                                    <option value="JEE">JEE Preparation</option>
+                                    <option value="NEET">NEET Preparation</option>
+                                    <option value="Foundation">Foundation (NTSE/Olympiad)</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="grid md:grid-cols-2 gap-6">
+                            <!-- Contact Number -->
+                            <div class="space-y-2">
+                                <label class="text-[10px] font-bold uppercase tracking-widest text-gray-400 ml-2">Contact Number</label>
+                                <div class="flex items-center w-full rounded-lg bg-white/50 border border-white/40 focus-within:border-primary outline-none transition-all backdrop-blur-md sketchy-border-sm overflow-hidden">
+                                    <span class="px-4 py-4 bg-gray-100/50 border-r border-white/40 text-gray-500 font-bold text-sm">+91</span>
+                                    <input required type="tel" name="contact" id="contact" maxlength="10" placeholder="XXXXXXXXXX" class="flex-1 px-4 py-4 bg-transparent outline-none text-sm font-medium">
+                                </div>
+                            </div>
+                            <!-- Alternative Contact Number -->
+                            <div class="space-y-2">
+                                <label class="text-[10px] font-bold uppercase tracking-widest text-gray-400 ml-2">Alternative Contact</label>
+                                <div class="flex items-center w-full rounded-lg bg-white/50 border border-white/40 focus-within:border-primary outline-none transition-all backdrop-blur-md sketchy-border-sm overflow-hidden">
+                                    <span class="px-4 py-4 bg-gray-100/50 border-r border-white/40 text-gray-500 font-bold text-sm">+91</span>
+                                    <input required type="tel" name="altContact" id="altContact" maxlength="10" placeholder="XXXXXXXXXX" class="flex-1 px-4 py-4 bg-transparent outline-none text-sm font-medium">
+                                </div>
+                                <p id="contact-error" class="text-[10px] text-secondary font-bold hidden">Alternative contact number can't be same as contact number.</p>
+                            </div>
+                        </div>
+
+                        <!-- Address -->
+                        <div class="space-y-2">
+                            <label class="text-[10px] font-bold uppercase tracking-widest text-gray-400 ml-2">Address</label>
+                            <textarea required name="address" rows="3" placeholder="Your full address" class="w-full px-6 py-4 rounded-lg bg-white/50 border border-white/40 focus:border-primary outline-none transition-all backdrop-blur-md sketchy-border-sm resize-none"></textarea>
+                        </div>
+
+                        <button type="submit" class="btn-primary w-full py-5 rounded-xl font-black uppercase tracking-widest sketchy-border text-lg mt-4">
+                            Book My Demo Class
+                        </button>
+                    </form>
+                </div>
+
+                <!-- Success Screen -->
+                <div id="success-screen" class="hidden text-center py-12">
+                    <div class="w-24 h-24 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-8 animate-bounce">
+                        <i data-lucide="check-circle" class="w-12 h-12 text-green-600"></i>
+                    </div>
+                    <h2 class="text-4xl font-black text-primary mb-4 tracking-tighter">Request Received!</h2>
+                    <p class="text-lg text-gray-600 mb-8 leading-relaxed">
+                        Thank you, <span id="success-name" class="font-bold text-secondary"></span>! Your demo class request has been submitted successfully.
+                    </p>
+                    <div class="glass p-6 rounded-xl border border-primary/20 mb-8 max-w-sm mx-auto">
+                        <p class="text-sm font-bold text-primary">
+                            <i data-lucide="phone-call" class="inline-block w-4 h-4 mr-2"></i>
+                            Our team will call you shortly to schedule your demo class.
+                        </p>
+                    </div>
+                    <a href="index.html" class="btn-outline sketchy-border px-8 py-4 inline-block">Back to Home</a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-primary text-white pt-20 pb-10 relative overflow-hidden border-t border-white/10">
+        <div class="max-w-7xl mx-auto px-6 relative z-10">
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
+                <div class="sm:col-span-2 lg:col-span-2">
+                    <div class="flex items-center gap-3 mb-6">
+                        <img src="https://i.supaimg.com/92f82b8e-0941-4720-9455-b7257d1262f2/b454a010-4f77-468c-b71b-528723aaeb66.png" class="h-10 w-auto object-contain logo-multiply bg-white rounded-lg p-1" alt="The Foundation Logo" referrerPolicy="no-referrer">
+                        <span class="text-2xl font-extrabold font-thalia">The Foundation</span>
+                    </div>
+                    <p class="text-white/60 max-w-sm mb-8 leading-relaxed">
+                        Empowering students in Jamshedpur with quality education and mentorship since 2019. Join us to create the life you love.
+                    </p>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-bold mb-6">Quick Links</h4>
+                    <ul class="space-y-4 text-white/60">
+                        <li><a href="index.html" class="hover:text-white transition-colors">Home</a></li>
+                        <li><a href="courses.html" class="hover:text-white transition-colors">Courses</a></li>
+                        <li><a href="gallery.html" class="hover:text-white transition-colors">Gallery</a></li>
+                        <li><a href="demo.html" class="hover:text-white transition-colors">Demo Class</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="pt-10 border-t border-white/10 text-center text-sm text-white/40">
+                <p>© 2026 The Foundation Jamshedpur. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="demo.js"></script>
+</body>
+</html>

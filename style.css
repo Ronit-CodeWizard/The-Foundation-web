@@ -32,16 +32,16 @@
 }
 
 .glass {
-    background: rgba(255, 255, 255, 0.4);
-    backdrop-filter: blur(40px) saturate(180%) contrast(100%);
-    -webkit-backdrop-filter: blur(40px) saturate(180%) contrast(100%);
+    background: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(20px) saturate(180%);
+    -webkit-backdrop-filter: blur(20px) saturate(180%);
     position: relative;
     overflow: hidden;
-    border: 1px solid rgba(255, 255, 255, 0.5);
+    border: 1px solid rgba(255, 255, 255, 1);
     box-shadow: 
-        0 4px 6px -1px rgba(0, 0, 0, 0.05),
-        0 2px 4px -1px rgba(0, 0, 0, 0.03),
-        inset 0 0 20px rgba(255, 255, 255, 0.2);
+        0 10px 15px -3px rgba(0, 0, 0, 0.05),
+        0 4px 6px -2px rgba(0, 0, 0, 0.02),
+        inset 0 0 0px 1px rgba(255, 255, 255, 0.5);
     transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -174,13 +174,13 @@
 }
 
 .mesh-gradient {
-    background-color: #ffffff;
+    background-color: #f8fafc;
     background-image: 
-        radial-gradient(at 0% 0%, rgba(13, 22, 88, 0.08) 0px, transparent 60%),
-        radial-gradient(at 100% 0%, rgba(224, 27, 41, 0.08) 0px, transparent 60%),
-        radial-gradient(at 100% 100%, rgba(248, 190, 6, 0.08) 0px, transparent 60%),
-        radial-gradient(at 0% 100%, rgba(13, 22, 88, 0.08) 0px, transparent 60%),
-        url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%230d1658' fill-opacity='0.03'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+        radial-gradient(at 0% 0%, rgba(13, 22, 88, 0.12) 0px, transparent 60%),
+        radial-gradient(at 100% 0%, rgba(224, 27, 41, 0.12) 0px, transparent 60%),
+        radial-gradient(at 100% 100%, rgba(248, 190, 6, 0.12) 0px, transparent 60%),
+        radial-gradient(at 0% 100%, rgba(13, 22, 88, 0.12) 0px, transparent 60%),
+        url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%230d1658' fill-opacity='0.05'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
 }
 
 .graffiti-bg {
@@ -242,7 +242,7 @@
 /* Reveal Animations */
 .reveal-up, .reveal-left, .reveal-right {
     opacity: 0;
-    transition: all 0.8s ease-out;
+    transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .reveal-up { transform: translateY(30px); }
@@ -250,8 +250,21 @@
 .reveal-right { transform: translateX(30px); }
 
 .reveal-visible {
+    opacity: 1 !important;
+    transform: translate(0, 0) !important;
+}
+
+/* Fallback if JS is disabled or fails to load */
+@media (prefers-reduced-motion: reduce) {
+    .reveal-up, .reveal-left, .reveal-right {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+.no-js .reveal-up, .no-js .reveal-left, .no-js .reveal-right {
     opacity: 1;
-    transform: translate(0, 0);
+    transform: none;
 }
 
 /* Navbar Scrolled State */

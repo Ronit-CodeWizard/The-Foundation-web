@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth no-js">
+<head>
+    <script>document.documentElement.classList.remove('no-js');</script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Courses | The Foundation Jamshedpur</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="style.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#0d1658',
+                        secondary: '#e01b29',
+                        accent: '#f8be06',
+                        surface: '#f8f9fa',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-white text-gray-900 font-sans antialiased selection:bg-primary selection:text-white overflow-x-hidden">
+
+    <!-- Graffiti Background -->
+    <div class="graffiti-bg"></div>
+
+    <!-- News Ticker -->
+    <div class="bg-primary text-white py-2 overflow-hidden relative z-[60]">
+        <div class="flex whitespace-nowrap animate-marquee">
+            <div class="flex items-center gap-8 px-8 border-r border-white/10">
+                <span class="text-xs font-bold uppercase tracking-wider">Admission Open for Session 2026-27 | JEE & NEET Batches Starting April 15th</span>
+                <span class="text-xs font-bold uppercase tracking-wider">FSAT Scholarship Test scheduled for March 25th</span>
+            </div>
+            <div class="flex items-center gap-8 px-8 border-r border-white/10">
+                <span class="text-xs font-bold uppercase tracking-wider">Admission Open for Session 2026-27 | JEE & NEET Batches Starting April 15th</span>
+                <span class="text-xs font-bold uppercase tracking-wider">FSAT Scholarship Test scheduled for March 25th</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header id="navbar" class="glass sticky top-0 z-50 border-b border-white/20 py-4">
+        <div class="max-w-7xl mx-auto px-6 flex items-center justify-between gap-4">
+            <div class="flex items-center gap-6">
+                <a href="index.html" class="w-10 h-10 rounded-xl glass flex items-center justify-center text-primary hover:bg-primary hover:text-white transition-all sketchy-border-sm" title="Back to Home">
+                    <i data-lucide="arrow-left" class="w-5 h-5"></i>
+                </a>
+                <a href="index.html" class="flex items-center gap-3 group">
+                    <img src="https://i.supaimg.com/92f82b8e-0941-4720-9455-b7257d1262f2/b454a010-4f77-468c-b71b-528723aaeb66.png" class="h-10 w-auto object-contain logo-multiply group-hover:scale-110 transition-transform" alt="Logo">
+                    <div class="flex flex-col leading-none">
+                        <span class="text-2xl font-extrabold text-primary font-thalia">The Foundation</span>
+                        <span class="text-[8px] font-bold tracking-[0.2em] uppercase text-secondary">Jamshedpur</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <section class="pt-40 pb-24 mesh-gradient relative overflow-hidden">
+        <div class="absolute inset-0 bg-primary/5 pointer-events-none"></div>
+        <div class="max-w-7xl mx-auto px-6 text-center relative z-10">
+            <h1 class="text-6xl md:text-8xl font-black text-primary mb-8 tracking-tighter reveal-up">
+                Our <span class="text-secondary italic">Programs</span>
+            </h1>
+            <p class="text-xl md:text-2xl text-gray-700 max-w-3xl mx-auto reveal-up font-medium" style="transition-delay: 100ms;">
+                Tailored learning paths designed to help you excel in competitive exams and school boards.
+            </p>
+        </div>
+    </section>
+
+    <!-- Courses Grid -->
+    <section class="py-20">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+                <!-- Schooling -->
+                <div class="glass p-10 flex flex-col rounded-xl border border-white/60 shadow-xl hover:shadow-2xl transition-all duration-500 group sketchy-border reveal-up tape-effect">
+                    <div class="w-16 h-16 bg-blue-100 rounded-lg flex items-center justify-center mb-8 group-hover:scale-110 transition-transform animate-float">
+                        <i data-lucide="book" class="text-blue-600 w-8 h-8"></i>
+                    </div>
+                    <span class="text-xs font-bold text-gray-400 uppercase tracking-widest mb-2">Class 4 to 12</span>
+                    <h4 class="text-3xl font-bold text-primary mb-4">Schooling</h4>
+                    <p class="text-gray-600 mb-8 leading-relaxed">Regular academic support for school boards with focus on fundamental clarity and regular school curriculum.</p>
+                    <ul class="space-y-4 mb-10">
+                        <li class="flex items-center gap-3 text-gray-600 font-medium"><i data-lucide="check" class="text-green-500 w-5 h-5"></i> Board Exam Focused</li>
+                        <li class="flex items-center gap-3 text-gray-600 font-medium"><i data-lucide="check" class="text-green-500 w-5 h-5"></i> Concept Building</li>
+                        <li class="flex items-center gap-3 text-gray-600 font-medium"><i data-lucide="check" class="text-green-500 w-5 h-5"></i> Regular Homework Help</li>
+                    </ul>
+                    <a href="register.html" class="btn-primary w-full py-4 rounded-xl flex items-center justify-center gap-2 mt-auto">
+                        Enroll Now <i data-lucide="chevron-right" class="w-4 h-4"></i>
+                    </a>
+                </div>
+
+                <!-- Schooling + JEE -->
+                <div class="glass p-10 flex flex-col rounded-xl border border-white/60 shadow-xl hover:shadow-2xl transition-all duration-500 group sketchy-border reveal-up tape-effect" style="transition-delay: 100ms;">
+                    <div class="w-16 h-16 bg-indigo-100 rounded-lg flex items-center justify-center mb-8 group-hover:scale-110 transition-transform animate-float">
+                        <i data-lucide="zap" class="text-indigo-600 w-8 h-8"></i>
+                    </div>
+                    <span class="text-xs font-bold text-gray-400 uppercase tracking-widest mb-2">Class 11 & 12</span>
+                    <h4 class="text-3xl font-bold text-primary mb-4">Schooling + JEE</h4>
+                    <p class="text-gray-600 mb-8 leading-relaxed">Integrated program for school boards and IIT-JEE entrance preparation with advanced problem solving.</p>
+                    <ul class="space-y-4 mb-10">
+                        <li class="flex items-center gap-3 text-gray-600 font-medium"><i data-lucide="check" class="text-green-500 w-5 h-5"></i> JEE Main & Advanced</li>
+                        <li class="flex items-center gap-3 text-gray-600 font-medium"><i data-lucide="check" class="text-green-500 w-5 h-5"></i> Integrated Curriculum</li>
+                        <li class="flex items-center gap-3 text-gray-600 font-medium"><i data-lucide="check" class="text-green-500 w-5 h-5"></i> Advanced Test Series</li>
+                    </ul>
+                    <a href="register.html" class="btn-primary w-full py-4 rounded-xl flex items-center justify-center gap-2 mt-auto">
+                        Enroll Now <i data-lucide="chevron-right" class="w-4 h-4"></i>
+                    </a>
+                </div>
+
+                <!-- Schooling + NEET -->
+                <div class="glass p-10 flex flex-col rounded-xl border border-white/60 shadow-xl hover:shadow-2xl transition-all duration-500 group sketchy-border reveal-up tape-effect" style="transition-delay: 200ms;">
+                    <div class="w-16 h-16 bg-red-100 rounded-lg flex items-center justify-center mb-8 group-hover:scale-110 transition-transform animate-float">
+                        <i data-lucide="heart" class="text-red-600 w-8 h-8"></i>
+                    </div>
+                    <span class="text-xs font-bold text-gray-400 uppercase tracking-widest mb-2">Class 11 & 12</span>
+                    <h4 class="text-3xl font-bold text-primary mb-4">Schooling + NEET</h4>
+                    <p class="text-gray-600 mb-8 leading-relaxed">Comprehensive medical entrance coaching integrated with school curriculum and NCERT focus.</p>
+                    <ul class="space-y-4 mb-10">
+                        <li class="flex items-center gap-3 text-gray-600 font-medium"><i data-lucide="check" class="text-green-500 w-5 h-5"></i> NEET-UG Preparation</li>
+                        <li class="flex items-center gap-3 text-gray-600 font-medium"><i data-lucide="check" class="text-green-500 w-5 h-5"></i> NCERT Intensive</li>
+                        <li class="flex items-center gap-3 text-gray-600 font-medium"><i data-lucide="check" class="text-green-500 w-5 h-5"></i> Regular Biology Drills</li>
+                    </ul>
+                    <a href="register.html" class="btn-primary w-full py-4 rounded-xl flex items-center justify-center gap-2 mt-auto">
+                        Enroll Now <i data-lucide="chevron-right" class="w-4 h-4"></i>
+                    </a>
+                </div>
+
+                <!-- Schooling + NTSE -->
+                <div class="glass p-10 flex flex-col rounded-xl border border-white/60 shadow-xl hover:shadow-2xl transition-all duration-500 group sketchy-border reveal-up pin-effect" style="transition-delay: 300ms;">
+                    <div class="w-16 h-16 bg-green-100 rounded-lg flex items-center justify-center mb-8 group-hover:scale-110 transition-transform animate-float">
+                        <i data-lucide="target" class="text-green-600 w-8 h-8"></i>
+                    </div>
+                    <span class="text-xs font-bold text-gray-400 uppercase tracking-widest mb-2">Class 8 to 10</span>
+                    <h4 class="text-3xl font-bold text-primary mb-4">Schooling + NTSE</h4>
+                    <p class="text-gray-600 mb-8 leading-relaxed">Targeted preparation for NTSE and other national scholarship exams along with school boards.</p>
+                    <ul class="space-y-4 mb-10">
+                        <li class="flex items-center gap-3 text-gray-600 font-medium"><i data-lucide="check" class="text-green-500 w-5 h-5"></i> MAT & SAT Specialization</li>
+                        <li class="flex items-center gap-3 text-gray-600 font-medium"><i data-lucide="check" class="text-green-500 w-5 h-5"></i> Scholarship Focused</li>
+                        <li class="flex items-center gap-3 text-gray-600 font-medium"><i data-lucide="check" class="text-green-500 w-5 h-5"></i> Mental Ability Training</li>
+                    </ul>
+                    <a href="register.html" class="btn-primary w-full py-4 rounded-xl flex items-center justify-center gap-2 mt-auto">
+                        Enroll Now <i data-lucide="chevron-right" class="w-4 h-4"></i>
+                    </a>
+                </div>
+
+                <!-- Olympiads -->
+                <div class="glass p-10 flex flex-col rounded-xl border border-white/60 shadow-xl hover:shadow-2xl transition-all duration-500 group sketchy-border reveal-up pin-effect" style="transition-delay: 400ms;">
+                    <div class="w-16 h-16 bg-yellow-100 rounded-lg flex items-center justify-center mb-8 group-hover:scale-110 transition-transform animate-float">
+                        <i data-lucide="award" class="text-yellow-600 w-8 h-8"></i>
+                    </div>
+                    <span class="text-xs font-bold text-gray-400 uppercase tracking-widest mb-2">Class 5 to 10</span>
+                    <h4 class="text-3xl font-bold text-primary mb-4">Olympiads</h4>
+                    <p class="text-gray-600 mb-8 leading-relaxed">Specialized training for Math, Science, and Cyber Olympiads to build competitive edge.</p>
+                    <ul class="space-y-4 mb-10">
+                        <li class="flex items-center gap-3 text-gray-600 font-medium"><i data-lucide="check" class="text-green-500 w-5 h-5"></i> Logical Reasoning</li>
+                        <li class="flex items-center gap-3 text-gray-600 font-medium"><i data-lucide="check" class="text-green-500 w-5 h-5"></i> Advanced Problem Solving</li>
+                        <li class="flex items-center gap-3 text-gray-600 font-medium"><i data-lucide="check" class="text-green-500 w-5 h-5"></i> International Standards</li>
+                    </ul>
+                    <a href="register.html" class="btn-primary w-full py-4 rounded-xl flex items-center justify-center gap-2 mt-auto">
+                        Enroll Now <i data-lucide="chevron-right" class="w-4 h-4"></i>
+                    </a>
+                </div>
+
+                <!-- Class X Test Series -->
+                <div class="glass p-10 flex flex-col rounded-xl border border-white/60 shadow-xl hover:shadow-2xl transition-all duration-500 group sketchy-border reveal-up pin-effect" style="transition-delay: 500ms;">
+                    <div class="w-16 h-16 bg-purple-100 rounded-lg flex items-center justify-center mb-8 group-hover:scale-110 transition-transform animate-float">
+                        <i data-lucide="clipboard-list" class="text-purple-600 w-8 h-8"></i>
+                    </div>
+                    <span class="text-xs font-bold text-gray-400 uppercase tracking-widest mb-2">Class 10</span>
+                    <h4 class="text-3xl font-bold text-primary mb-4">Class X Test Series</h4>
+                    <p class="text-gray-600 mb-8 leading-relaxed">Intensive board exam mock tests designed to maximize board exam percentages.</p>
+                    <ul class="space-y-4 mb-10">
+                        <li class="flex items-center gap-3 text-gray-600 font-medium"><i data-lucide="check" class="text-green-500 w-5 h-5"></i> Answer Writing Skills</li>
+                        <li class="flex items-center gap-3 text-gray-600 font-medium"><i data-lucide="check" class="text-green-500 w-5 h-5"></i> Sample Paper Solving</li>
+                        <li class="flex items-center gap-3 text-gray-600 font-medium"><i data-lucide="check" class="text-green-500 w-5 h-5"></i> Detailed Feedback</li>
+                    </ul>
+                    <a href="register.html" class="btn-primary w-full py-4 rounded-xl flex items-center justify-center gap-2 mt-auto">
+                        Enroll Now <i data-lucide="chevron-right" class="w-4 h-4"></i>
+                    </a>
+                </div>
+
+                <!-- FSAT -->
+                <div class="glass p-10 flex flex-col rounded-xl border border-white/60 shadow-xl hover:shadow-2xl transition-all duration-500 group sketchy-border reveal-up pin-effect" style="transition-delay: 600ms;">
+                    <div class="w-16 h-16 bg-accent/20 rounded-lg flex items-center justify-center mb-8 group-hover:scale-110 transition-transform animate-float">
+                        <i data-lucide="sparkles" class="text-accent w-8 h-8"></i>
+                    </div>
+                    <span class="text-xs font-bold text-gray-400 uppercase tracking-widest mb-2">Scholarship Test</span>
+                    <h4 class="text-3xl font-bold text-primary mb-4">Scholarship Test (FSAT)</h4>
+                    <p class="text-gray-600 mb-8 leading-relaxed">Appear for FSAT and win up to 100% scholarship on tuition fees for all courses.</p>
+                    <ul class="space-y-4 mb-10">
+                        <li class="flex items-center gap-3 text-gray-600 font-medium"><i data-lucide="check" class="text-green-500 w-5 h-5"></i> Up to 100% Scholarship</li>
+                        <li class="flex items-center gap-3 text-gray-600 font-medium"><i data-lucide="check" class="text-green-500 w-5 h-5"></i> Performance Analysis</li>
+                        <li class="flex items-center gap-3 text-gray-600 font-medium"><i data-lucide="check" class="text-green-500 w-5 h-5"></i> Career Counseling</li>
+                    </ul>
+                    <a href="register.html" class="btn-primary w-full py-4 rounded-xl flex items-center justify-center gap-2 mt-auto">
+                        Register Now <i data-lucide="chevron-right" class="w-4 h-4"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-primary text-white pt-20 pb-10 relative overflow-hidden border-t border-white/10">
+        <div class="max-w-7xl mx-auto px-6 relative z-10">
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
+                <div class="sm:col-span-2 lg:col-span-2">
+                    <div class="flex items-center gap-3 mb-6">
+                        <img src="https://i.supaimg.com/92f82b8e-0941-4720-9455-b7257d1262f2/b454a010-4f77-468c-b71b-528723aaeb66.png" class="h-10 w-auto object-contain logo-multiply bg-white rounded-lg p-1" alt="The Foundation Logo" referrerPolicy="no-referrer">
+                        <span class="text-2xl font-extrabold font-thalia">The Foundation</span>
+                    </div>
+                    <p class="text-white/60 max-w-sm mb-8 leading-relaxed">
+                        Empowering students in Jamshedpur with quality education and mentorship since 2019. Join us to create the life you love.
+                    </p>
+                    <div class="flex gap-4">
+                        <a href="#" class="w-10 h-10 rounded-lg bg-white/10 flex items-center justify-center transition-all sketchy-border-sm hover:bg-secondary"><i data-lucide="facebook" class="w-5 h-5"></i></a>
+                        <a href="#" class="w-10 h-10 rounded-lg bg-white/10 flex items-center justify-center transition-all sketchy-border-sm hover:bg-secondary"><i data-lucide="instagram" class="w-5 h-5"></i></a>
+                        <a href="#" class="w-10 h-10 rounded-lg bg-white/10 flex items-center justify-center transition-all sketchy-border-sm hover:bg-secondary"><i data-lucide="youtube" class="w-5 h-5"></i></a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-bold mb-6">Quick Links</h4>
+                    <ul class="space-y-4 text-white/60">
+                        <li><a href="index.html" class="hover:text-white transition-colors">Home</a></li>
+                        <li><a href="courses.html" class="hover:text-white transition-colors">Courses</a></li>
+                        <li><a href="gallery.html" class="hover:text-white transition-colors">Gallery</a></li>
+                        <li><a href="index.html#about" class="hover:text-white transition-colors">About</a></li>
+                        <li><a href="index.html#results" class="hover:text-white transition-colors">Results</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-bold mb-6">Support</h4>
+                    <ul class="space-y-4 text-white/60">
+                        <li><a href="#" class="hover:text-white transition-colors">Admission Help</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Scholarships</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">FAQ</a></li>
+                    </ul>
+                </div>
+                
+                <div class="sm:col-span-2 lg:col-span-1">
+                    <h4 class="text-lg font-bold mb-6">Stay Updated</h4>
+                    <form class="flex gap-2">
+                        <input type="email" required placeholder="Your email" class="flex-1 px-4 py-2 bg-white/10 border border-white/20 rounded-xl outline-none text-sm sketchy-border-sm">
+                        <button type="submit" class="bg-accent text-primary px-4 py-2 rounded-xl font-bold text-xs sketchy-border-sm">Join</button>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="pt-10 border-t border-white/10 text-center text-sm text-white/40">
+                <p>© 2026 The Foundation Jamshedpur. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
