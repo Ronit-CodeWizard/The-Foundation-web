@@ -32,7 +32,7 @@ To receive registration data in your Google Sheet:
     - Paste your Google Sheet link to create a new API.
     - Copy your **API URL**.
 3.  **Update the Code**:
-    - Open `register.js`.
+    - Open `src/scripts/register.js`.
     - Replace the `GOOGLE_SHEET_URL` value with your new API URL.
 
 ## 📂 Project Structure
@@ -42,8 +42,12 @@ To receive registration data in your Google Sheet:
 - `gallery.html`: Visual showcase of the campus.
 - `register.html`: Multi-step student registration form.
 - `demo.html`: Quick demo class booking form.
-- `register.js`: Logic for the multi-step form and SheetDB integration.
-- `demo.js`: Logic for the demo booking form.
+- `src/scripts/`: Contains all JavaScript logic.
+    - `script.js`: General UI logic and animations.
+    - `register.js`: Logic for the multi-step registration form.
+    - `demo.js`: Logic for the demo booking form.
+- `src/styles/`: Contains global CSS.
+    - `style.css`: Custom Brutalist styles and animations.
 
 ## 🎨 Design Philosophy
 
