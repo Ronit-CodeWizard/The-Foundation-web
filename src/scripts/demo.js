@@ -52,6 +52,15 @@ form.addEventListener('submit', async (e) => {
 
     const formData = new FormData(form);
     const name = formData.get('studentName');
+    
+    const data = {
+        formType: 'Demo Booking',
+        studentName: name,
+        class: formData.get('class') || '',
+        contact: formData.get('contact') || '',
+        altContact: formData.get('altContact') || '',
+        source: 'Demo Form'
+    };
 
     // Show success screen
     successName.textContent = name;
@@ -60,6 +69,16 @@ form.addEventListener('submit', async (e) => {
 
     // Scroll to top of form
     document.getElementById('form-container').scrollIntoView({ behavior: 'smooth' });
+
+    // Send to Google Sheets via Google Apps Script
+    const GOOGLE_SHEETS_URL = 'https://script.google.com/macros/s/AKfycbylaC-WE5ufXDfWWR4bokZYqI174yVD2a39LtuQaUlfBHcF5l0lB4wbNR72RCvZPPvX/exec';
+    
+    fetch(GOOGLE_SHEETS_URL, {
+        method: 'POST',
+        mode: 'no-cors',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(data)
+    }).catch(err => console.log('Background sync failed:', err));
 
     submitBtn.disabled = false;
     submitBtn.innerHTML = originalText;

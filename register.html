@@ -55,6 +55,18 @@
 </head>
 <body class="bg-white text-gray-900 font-sans antialiased selection:bg-primary selection:text-white overflow-x-hidden min-h-screen flex flex-col">
 
+    <!-- Book Loader -->
+    <div id="loader" class="loader-wrapper">
+        <div class="loader">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <div class="loader-text">The Foundation</div>
+    </div>
+
     <!-- Graffiti Background -->
     <div class="graffiti-bg"></div>
 
@@ -63,11 +75,9 @@
         <div class="flex whitespace-nowrap animate-marquee">
             <div class="flex items-center gap-8 px-8 border-r border-white/10">
                 <span class="text-xs font-bold uppercase tracking-wider">Admission Open for Session 2026-27 | JEE & NEET Batches Starting April 15th</span>
-                <span class="text-xs font-bold uppercase tracking-wider">FSAT Scholarship Test scheduled for March 25th</span>
             </div>
             <div class="flex items-center gap-8 px-8 border-r border-white/10">
                 <span class="text-xs font-bold uppercase tracking-wider">Admission Open for Session 2026-27 | JEE & NEET Batches Starting April 15th</span>
-                <span class="text-xs font-bold uppercase tracking-wider">FSAT Scholarship Test scheduled for March 25th</span>
             </div>
         </div>
     </div>
@@ -280,7 +290,7 @@
                                     <i data-lucide="target" class="text-green-600 w-5 h-5"></i>
                                 </div>
                                 <h4 class="font-bold text-primary">Schooling + NTSE</h4>
-                                <p class="text-[10px] text-gray-500 mt-1">Scholarship Exam Prep</p>
+                                <p class="text-[10px] text-gray-500 mt-1">Competitive Exam Prep</p>
                             </div>
                             <div class="course-card glass p-6 rounded-xl border-2 border-transparent cursor-pointer transition-all sketchy-border-sm hover:border-primary/30" data-course="Olympiads">
                                 <div class="w-10 h-10 bg-yellow-100 rounded-lg flex items-center justify-center mb-4">
@@ -296,13 +306,7 @@
                                 <h4 class="font-bold text-primary">Class X Test Series</h4>
                                 <p class="text-[10px] text-gray-500 mt-1">Board Exam Mock Tests</p>
                             </div>
-                            <div class="course-card glass p-6 rounded-xl border-2 border-transparent cursor-pointer transition-all sm:col-span-2 sketchy-border-sm hover:border-primary/30" data-course="Scholarship Test">
-                                <div class="w-10 h-10 bg-accent/20 rounded-lg flex items-center justify-center mb-4">
-                                    <i data-lucide="sparkles" class="text-accent w-5 h-5"></i>
-                                </div>
-                                <h4 class="font-bold text-primary">Scholarship Test (FSAT)</h4>
-                                <p class="text-[10px] text-gray-500 mt-1">Apply for up to 100% scholarship</p>
-                            </div>
+
                         </div>
                         <input type="hidden" name="programme" required id="programme-input">
                     </div>
@@ -428,9 +432,10 @@
                 <div>
                     <h4 class="text-lg font-bold mb-6 text-white">Support</h4>
                     <ul class="space-y-4 text-white/60">
-                        <li><a href="#" class="hover:text-white transition-colors">Admission Help</a></li>
-                        <li><a href="#" class="hover:text-white transition-colors">Scholarships</a></li>
-                        <li><a href="#" class="hover:text-white transition-colors">FAQ</a></li>
+                        <li><a href="admission-help.html" class="hover:text-white transition-colors">Admission Help</a></li>
+                        <li><a href="faq.html" class="hover:text-white transition-colors">FAQ</a></li>
+                        <li><a href="privacy-policy.html" class="hover:text-white transition-colors">Privacy Policy</a></li>
+                        <li><a href="terms-conditions.html" class="hover:text-white transition-colors">Terms & Conditions</a></li>
                     </ul>
                 </div>
                 
@@ -449,6 +454,7 @@
         </div>
     </footer>
 
+    <script src="src/scripts/script.js"></script>
     <script src="src/scripts/register.js"></script>
 </body>
 </html>

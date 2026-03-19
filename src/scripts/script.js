@@ -78,3 +78,66 @@ if (contactForm) {
         contactForm.reset();
     });
 }
+
+// Loader Handling
+const hideLoader = () => {
+    const loader = document.getElementById('loader');
+    document.body.classList.add('loaded');
+    if (loader) {
+        loader.classList.add('fade-out');
+        setTimeout(() => {
+            loader.style.display = 'none';
+        }, 500);
+    }
+};
+
+window.addEventListener('load', hideLoader);
+// Fallback if load event doesn't fire or takes too long
+setTimeout(hideLoader, 3000);
+
+// Page Transitions
+document.addEventListener('click', (e) => {
+    const link = e.target.closest('a');
+    if (!link) return;
+
+    const href = link.getAttribute('href');
+    const target = link.getAttribute('target');
+
+    // Only for internal links that are not hashes, external, or opening in new tab
+    if (href && 
+        !href.startsWith('#') && 
+        !href.startsWith('http') && 
+        !href.startsWith('mailto') && 
+        !href.startsWith('tel') &&
+        target !== '_blank' &&
+        !e.ctrlKey && !e.metaKey && !e.shiftKey) {
+        
+        e.preventDefault();
+        const loader = document.getElementById('loader');
+        if (loader) {
+            loader.style.display = 'flex';
+            // Force reflow
+            loader.offsetHeight;
+            loader.classList.remove('fade-out');
+            
+            setTimeout(() => {
+                window.location.href = href;
+            }, 500);
+        } else {
+            window.location.href = href;
+        }
+    }
+});
+
+// Handle browser back button (popstate)
+window.addEventListener('pageshow', (event) => {
+    if (event.persisted) {
+        const loader = document.getElementById('loader');
+        if (loader) {
+            loader.classList.add('fade-out');
+            setTimeout(() => {
+                loader.style.display = 'none';
+            }, 500);
+        }
+    }
+});

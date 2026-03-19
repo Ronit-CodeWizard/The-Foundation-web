@@ -21,19 +21,63 @@ A high-performance, brutalist-inspired website for **The Foundation**, a premier
 - **Backend Integration**: SheetDB API (Google Sheets)
 - **Deployment**: Static Web Hosting
 
-## 📋 Google Sheets Setup (SheetDB)
+## 📋 Google Sheets Setup (Google Apps Script)
 
-To receive registration data in your Google Sheet:
+To receive registration data directly in your Google Sheet without third-party services:
 
-1.  **Create a Google Sheet**: Add the following headers to the first row (Row 1):
-    `formType`, `studentName`, `guardianName`, `class`, `board`, `school`, `contact`, `gender`, `programme`, `source`
-2.  **Connect to SheetDB**:
-    - Go to [SheetDB.io](https://sheetdb.io).
-    - Paste your Google Sheet link to create a new API.
-    - Copy your **API URL**.
-3.  **Update the Code**:
-    - Open `src/scripts/register.js`.
-    - Replace the `GOOGLE_SHEET_URL` value with your new API URL.
+1.  **Create a Google Sheet**: Open a new Google Sheet.
+2.  **Open Script Editor**: Go to **Extensions > Apps Script**.
+3.  **Paste the Script**: Delete any existing code and paste the following:
+
+```javascript
+function doPost(e) {
+  var sheet = SpreadsheetApp.getActiveSpreadsheet().getActiveSheet();
+  var data = JSON.parse(e.postData.contents);
+  
+  // Define the headers you want to save
+  var headers = [
+    "Timestamp", "formType", "studentName", "guardianName", 
+    "class", "board", "school", "contact", "gender", "programme", "source"
+  ];
+  
+  // If sheet is empty, add headers
+  if (sheet.getLastRow() === 0) {
+    sheet.appendRow(headers);
+  }
+  
+  // Prepare the row data
+  var row = [
+    new Date(),
+    data.formType || "",
+    data.studentName || "",
+    data.guardianName || "",
+    data.class || "",
+    data.board || "",
+    data.school || "",
+    data.contact || "",
+    data.gender || "",
+    data.programme || "",
+    data.source || ""
+  ];
+  
+  sheet.appendRow(row);
+  
+  return ContentService.createTextOutput("Success")
+    .setMimeType(ContentService.MimeType.TEXT);
+}
+```
+
+4.  **Deploy as Web App**:
+    - Click **Deploy > New Deployment**.
+    - Select Type: **Web App**.
+    - Description: "Foundation Website API".
+    - Execute as: **Me**.
+    - Who has access: **Anyone**.
+    - Click **Deploy** and authorize the permissions.
+5.  **Update the Code**:
+    - Copy the **Web App URL**.
+    - Open `src/scripts/register.js` and `src/scripts/demo.js`.
+    - Replace `YOUR_SCRIPT_ID` in the `GOOGLE_SHEETS_URL` with your actual script ID or the full URL.
 
 ## 📂 Project Structure
 

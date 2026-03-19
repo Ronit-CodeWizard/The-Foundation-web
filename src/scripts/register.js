@@ -288,12 +288,16 @@ form.addEventListener('submit', (e) => {
             lucide.createIcons();
         }
 
-        // 3. Try to send to Google Sheet in the background
-        fetch('https://sheetdb.io/api/v1/gytk5v49lab4k', {
+        // 3. Send to Google Sheets via Google Apps Script
+        // Replace this URL with your Google Apps Script Web App URL
+        const GOOGLE_SHEETS_URL = 'https://script.google.com/macros/s/AKfycbylaC-WE5ufXDfWWR4bokZYqI174yVD2a39LtuQaUlfBHcF5l0lB4wbNR72RCvZPPvX/exec';
+        
+        fetch(GOOGLE_SHEETS_URL, {
             method: 'POST',
+            mode: 'no-cors', // Important for Google Apps Script
             headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify({ data: [data] })
-        }).catch(err => console.log('Background sync failed, but user is happy.'));
+            body: JSON.stringify(data)
+        }).catch(err => console.log('Background sync failed:', err));
     }
 });
 
