@@ -157,8 +157,8 @@
 .pin-effect::before {
     content: "";
     position: absolute;
-    top: 10px;
-    left: 10px;
+    top: 15px;
+    left: 15px;
     width: 12px;
     height: 12px;
     background: #e01b29;
@@ -268,6 +268,50 @@
 }
 
 /* Navbar Scrolled State */
+/* Mobile Menu Animation */
+.mobile-menu-container {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.98);
+    backdrop-filter: blur(20px);
+    border-top: 1px solid rgba(0, 0, 0, 0.05);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    max-height: 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+    z-index: 100;
+}
+
+.mobile-menu-container.active {
+    max-height: 600px;
+    opacity: 1;
+    visibility: visible;
+}
+
+.mobile-menu-container a {
+    transform: translateY(20px);
+    opacity: 0;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.mobile-menu-container.active a {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+/* Staggered animation for menu items */
+.mobile-menu-container.active a:nth-child(1) { transition-delay: 0.1s; }
+.mobile-menu-container.active a:nth-child(2) { transition-delay: 0.15s; }
+.mobile-menu-container.active a:nth-child(3) { transition-delay: 0.2s; }
+.mobile-menu-container.active a:nth-child(4) { transition-delay: 0.25s; }
+.mobile-menu-container.active a:nth-child(5) { transition-delay: 0.3s; }
+.mobile-menu-container.active a:nth-child(6) { transition-delay: 0.35s; }
+.mobile-menu-container.active a:nth-child(7) { transition-delay: 0.4s; }
+
 .navbar-scrolled {
     background: rgba(255, 255, 255, 0.8);
     backdrop-filter: blur(20px);

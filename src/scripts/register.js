@@ -280,7 +280,7 @@ form.addEventListener('submit', (e) => {
         if (!existingWA) {
             const waBtn = document.createElement('a');
             waBtn.id = 'wa-backup-btn';
-            waBtn.href = `https://wa.me/919123456789?text=${waMessage}`;
+            waBtn.href = `https://wa.me/917488590994?text=${waMessage}`;
             waBtn.target = '_blank';
             waBtn.className = 'flex items-center justify-center gap-2 w-full py-4 bg-[#25D366] text-white rounded-xl font-bold mt-6 sketchy-border-sm';
             waBtn.innerHTML = '<i data-lucide="message-circle"></i> Confirm on WhatsApp (Optional)';

@@ -66,7 +66,7 @@
             <div class="max-w-7xl mx-auto px-6 flex justify-between items-center">
                 <div class="flex items-center gap-3">
                     <div class="h-10 w-auto flex items-center justify-center">
-                        <img src="https://i.supaimg.com/92f82b8e-0941-4720-9455-b7257d1262f2/b454a010-4f77-468c-b71b-528723aaeb66.png" class="h-full w-auto object-contain logo-multiply" alt="The Foundation Logo" referrerPolicy="no-referrer">
+                        <img src="https://i.supaimg.com/92f82b8e-0941-4720-9455-b7257d1262f2/b454a010-4f77-468c-b71b-528723aaeb66.png" class="h-full w-auto object-contain" alt="The Foundation Logo" referrerPolicy="no-referrer">
                     </div>
                     <div class="flex flex-col leading-none">
                         <span class="text-2xl font-extrabold text-primary font-thalia">The Foundation</span>
@@ -81,7 +81,6 @@
                     <a href="gallery.html" class="text-sm font-semibold text-gray-700 hover:text-primary transition-colors">Gallery</a>
                     <a href="demo.html" class="text-sm font-semibold text-gray-700 hover:text-primary transition-colors">Demo Class</a>
                     <a href="#about" class="text-sm font-semibold text-gray-700 hover:text-primary transition-colors">About</a>
-                    <a href="#results" class="text-sm font-semibold text-gray-700 hover:text-primary transition-colors">Results</a>
                     <a href="register.html" class="btn-primary sketchy-border py-2 px-6 text-sm inline-block text-center">Enroll Now</a>
                 </div>
 
@@ -92,14 +91,15 @@
             </div>
 
             <!-- Mobile Menu -->
-            <div id="mobile-menu" class="hidden absolute top-full left-0 w-full bg-white/95 backdrop-blur-3xl shadow-2xl flex flex-col p-6 gap-4 border-t border-gray-100 sketchy-border">
-                <a href="index.html" class="text-lg font-semibold text-gray-800">Home</a>
-                <a href="courses.html" class="text-lg font-semibold text-gray-800">Courses</a>
-                <a href="gallery.html" class="text-lg font-semibold text-gray-800">Gallery</a>
-                <a href="demo.html" class="text-lg font-semibold text-gray-800">Demo Class</a>
-                <a href="#about" class="text-lg font-semibold text-gray-800">About</a>
-                <a href="#results" class="text-lg font-semibold text-gray-800">Results</a>
-                <a href="register.html" class="btn-primary sketchy-border w-full py-4 font-bold inline-block text-center">Admission 2026</a>
+            <div id="mobile-menu" class="mobile-menu-container">
+                <div class="flex flex-col p-6 gap-4">
+                    <a href="index.html" class="text-lg font-semibold text-gray-800 hover:text-primary transition-colors">Home</a>
+                    <a href="courses.html" class="text-lg font-semibold text-gray-800 hover:text-primary transition-colors">Courses</a>
+                    <a href="gallery.html" class="text-lg font-semibold text-gray-800 hover:text-primary transition-colors">Gallery</a>
+                    <a href="demo.html" class="text-lg font-semibold text-gray-800 hover:text-primary transition-colors">Demo Class</a>
+                    <a href="#about" class="text-lg font-semibold text-gray-800 hover:text-primary transition-colors">About</a>
+                    <a href="register.html" class="btn-primary sketchy-border w-full py-4 font-bold inline-block text-center">Admission 2026</a>
+                </div>
             </div>
         </nav>
     </header>
@@ -371,102 +371,6 @@
                     Explore All Courses 
                     <i data-lucide="arrow-right" class="w-5 h-5 group-hover:translate-x-1 transition-transform"></i>
                 </a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Results Section -->
-    <section class="py-24 bg-white relative overflow-hidden">
-        <div class="max-w-7xl mx-auto px-6">
-            <div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-8">
-                <div class="reveal-left">
-                    <h2 class="text-sm font-bold text-secondary uppercase tracking-widest mb-4">Our Pride</h2>
-                    <h3 class="text-4xl md:text-6xl font-extrabold text-primary leading-tight">
-                        Consistent <span class="text-secondary">Results</span> <br>
-                        Year After Year.
-                    </h3>
-                </div>
-                <button class="btn-outline glass sketchy-border flex items-center gap-2 reveal-right">
-                    View All Results <i data-lucide="external-link" class="w-4 h-4"></i>
-                </button>
-            </div>
-
-            <div class="overflow-x-auto no-scrollbar pb-8 -mx-6 px-6">
-                <div class="grid grid-rows-3 grid-flow-col gap-6 w-max">
-                    <div class="glass p-4 rounded-xl text-center border border-white/60 shadow-lg sketchy-border-sm reveal-up tape-effect-corner w-64">
-                        <div class="w-24 h-24 mx-auto rounded-lg overflow-hidden mb-4 border-4 border-white shadow-md sketchy-border-sm">
-                            <img src="https://picsum.photos/seed/topper1/200/200" alt="Topper" class="w-full h-full object-cover">
-                        </div>
-                        <h4 class="text-sm font-bold text-primary mb-1 truncate">Rahul Kumar</h4>
-                        <p class="text-secondary font-black text-lg leading-none mb-1">AIR 152</p>
-                        <p class="text-[10px] font-bold text-gray-400 uppercase tracking-tighter">JEE Advanced</p>
-                    </div>
-                    <div class="glass p-4 rounded-xl text-center border border-white/60 shadow-lg sketchy-border-sm reveal-up tape-effect-corner w-64" style="transition-delay: 100ms;">
-                        <div class="w-24 h-24 mx-auto rounded-lg overflow-hidden mb-4 border-4 border-white shadow-md sketchy-border-sm">
-                            <img src="https://picsum.photos/seed/topper2/200/200" alt="Topper" class="w-full h-full object-cover">
-                        </div>
-                        <h4 class="text-sm font-bold text-primary mb-1 truncate">Sneha Singh</h4>
-                        <p class="text-secondary font-black text-lg leading-none mb-1">AIR 89</p>
-                        <p class="text-[10px] font-bold text-gray-400 uppercase tracking-tighter">NEET UG</p>
-                    </div>
-                    <div class="glass p-4 rounded-xl text-center border border-white/60 shadow-lg sketchy-border-sm reveal-up tape-effect-corner w-64" style="transition-delay: 200ms;">
-                        <div class="w-24 h-24 mx-auto rounded-lg overflow-hidden mb-4 border-4 border-white shadow-md sketchy-border-sm">
-                            <img src="https://picsum.photos/seed/topper3/200/200" alt="Topper" class="w-full h-full object-cover">
-                        </div>
-                        <h4 class="text-sm font-bold text-primary mb-1 truncate">Aryan Das</h4>
-                        <p class="text-secondary font-black text-lg leading-none mb-1">AIR 412</p>
-                        <p class="text-[10px] font-bold text-gray-400 uppercase tracking-tighter">JEE Main</p>
-                    </div>
-                    <div class="glass p-4 rounded-xl text-center border border-white/60 shadow-lg sketchy-border-sm reveal-up tape-effect-corner w-64" style="transition-delay: 300ms;">
-                        <div class="w-24 h-24 mx-auto rounded-lg overflow-hidden mb-4 border-4 border-white shadow-md sketchy-border-sm">
-                            <img src="https://picsum.photos/seed/topper4/200/200" alt="Topper" class="w-full h-full object-cover">
-                        </div>
-                        <h4 class="text-sm font-bold text-primary mb-1 truncate">Priya Verma</h4>
-                        <p class="text-secondary font-black text-lg leading-none mb-1">98.5%</p>
-                        <p class="text-[10px] font-bold text-gray-400 uppercase tracking-tighter">CBSE Class 12</p>
-                    </div>
-                    <div class="glass p-4 rounded-xl text-center border border-white/60 shadow-lg sketchy-border-sm reveal-up tape-effect-corner w-64" style="transition-delay: 400ms;">
-                        <div class="w-24 h-24 mx-auto rounded-lg overflow-hidden mb-4 border-4 border-white shadow-md sketchy-border-sm">
-                            <img src="https://picsum.photos/seed/topper5/200/200" alt="Topper" class="w-full h-full object-cover">
-                        </div>
-                        <h4 class="text-sm font-bold text-primary mb-1 truncate">Vikram Jha</h4>
-                        <p class="text-secondary font-black text-lg leading-none mb-1">AIR 105</p>
-                        <p class="text-[10px] font-bold text-gray-400 uppercase tracking-tighter">JEE Advanced</p>
-                    </div>
-                    <div class="glass p-4 rounded-xl text-center border border-white/60 shadow-lg sketchy-border-sm reveal-up tape-effect-corner w-64" style="transition-delay: 500ms;">
-                        <div class="w-24 h-24 mx-auto rounded-lg overflow-hidden mb-4 border-4 border-white shadow-md sketchy-border-sm">
-                            <img src="https://picsum.photos/seed/topper6/200/200" alt="Topper" class="w-full h-full object-cover">
-                        </div>
-                        <h4 class="text-sm font-bold text-primary mb-1 truncate">Ishita Roy</h4>
-                        <p class="text-secondary font-black text-lg leading-none mb-1">AIR 234</p>
-                        <p class="text-[10px] font-bold text-gray-400 uppercase tracking-tighter">NEET UG</p>
-                    </div>
-                    <!-- Extra toppers for scrolling -->
-                    <div class="glass p-4 rounded-xl text-center border border-white/60 shadow-lg sketchy-border-sm reveal-up tape-effect-corner w-64" style="transition-delay: 600ms;">
-                        <div class="w-24 h-24 mx-auto rounded-lg overflow-hidden mb-4 border-4 border-white shadow-md sketchy-border-sm">
-                            <img src="https://picsum.photos/seed/topper7/200/200" alt="Topper" class="w-full h-full object-cover">
-                        </div>
-                        <h4 class="text-sm font-bold text-primary mb-1 truncate">Ananya Sen</h4>
-                        <p class="text-secondary font-black text-lg leading-none mb-1">AIR 567</p>
-                        <p class="text-[10px] font-bold text-gray-400 uppercase tracking-tighter">JEE Main</p>
-                    </div>
-                    <div class="glass p-4 rounded-xl text-center border border-white/60 shadow-lg sketchy-border-sm reveal-up tape-effect-corner w-64" style="transition-delay: 700ms;">
-                        <div class="w-24 h-24 mx-auto rounded-lg overflow-hidden mb-4 border-4 border-white shadow-md sketchy-border-sm">
-                            <img src="https://picsum.photos/seed/topper8/200/200" alt="Topper" class="w-full h-full object-cover">
-                        </div>
-                        <h4 class="text-sm font-bold text-primary mb-1 truncate">Rohan Mehra</h4>
-                        <p class="text-secondary font-black text-lg leading-none mb-1">97.2%</p>
-                        <p class="text-[10px] font-bold text-gray-400 uppercase tracking-tighter">ICSE Class 10</p>
-                    </div>
-                    <div class="glass p-4 rounded-xl text-center border border-white/60 shadow-lg sketchy-border-sm reveal-up tape-effect-corner w-64" style="transition-delay: 800ms;">
-                        <div class="w-24 h-24 mx-auto rounded-lg overflow-hidden mb-4 border-4 border-white shadow-md sketchy-border-sm">
-                            <img src="https://picsum.photos/seed/topper9/200/200" alt="Topper" class="w-full h-full object-cover">
-                        </div>
-                        <h4 class="text-sm font-bold text-primary mb-1 truncate">Sanya Gupta</h4>
-                        <p class="text-secondary font-black text-lg leading-none mb-1">AIR 312</p>
-                        <p class="text-[10px] font-bold text-gray-400 uppercase tracking-tighter">NEET UG</p>
-                    </div>
-                </div>
             </div>
         </div>
     </section>
@@ -766,7 +670,7 @@
                 <div class="glass rounded-xl overflow-hidden border border-white/60 sketchy-border-sm reveal-up" style="transition-delay: 200ms;">
                     <div class="p-6">
                         <h4 class="text-lg font-bold text-primary mb-2">What is the batch size?</h4>
-                        <p class="text-gray-600">We maintain a strict limit of 30 students per batch to ensure personalized attention.</p>
+                        <p class="text-gray-600">We maintain a strict limit of 50-60 students per batch to ensure personalized attention.</p>
                     </div>
                 </div>
             </div>
@@ -795,106 +699,9 @@
                     </p>
                 </div>
                 <div class="flex flex-col items-center gap-4">
-                    <a href="https://www.google.com/maps/dir/?api=1&destination=The+Foundation+Parsudih+Jamshedpur" target="_blank" class="btn-primary sketchy-border !bg-accent !text-primary !px-10 !py-5 text-xl scale-110 inline-block text-center">Get Directions</a>
+                    <a href="https://maps.app.goo.gl/LxtS1Hjfp9RkWkBd6" target="_blank" class="btn-primary sketchy-border !bg-accent !text-primary !px-10 !py-5 text-xl scale-110 inline-block text-center">Get Directions</a>
                     <p class="text-white/60 text-xs font-bold uppercase tracking-widest">Location: Parsudih, Jamshedpur</p>
                 </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Results/Toppers Section -->
-    <section id="results" class="py-24 relative overflow-hidden">
-        <div class="max-w-7xl mx-auto px-6">
-            <div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-6">
-                <div class="reveal-left">
-                    <h2 class="text-5xl md:text-7xl font-black text-primary tracking-tighter mb-4">
-                        Our <span class="text-secondary italic">Champions</span>
-                    </h2>
-                    <p class="text-xl text-gray-600 font-medium">Celebrating the hard work and success of our students.</p>
-                </div>
-                <div class="reveal-right">
-                    <div class="glass p-4 rounded-2xl sketchy-border-sm flex items-center gap-4">
-                        <div class="text-right">
-                            <p class="text-2xl font-black text-primary">95%</p>
-                            <p class="text-[10px] font-bold uppercase text-gray-400">Success Rate</p>
-                        </div>
-                        <div class="w-px h-10 bg-gray-200"></div>
-                        <div>
-                            <p class="text-2xl font-black text-secondary">500+</p>
-                            <p class="text-[10px] font-bold uppercase text-gray-400">Selections</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-                <!-- Topper 1 -->
-                <div class="reveal-up">
-                    <div class="glass p-4 rounded-[2rem] border border-white/60 shadow-xl sketchy-border group hover:-translate-y-2 transition-all duration-500 tape-effect">
-                        <div class="relative rounded-2xl overflow-hidden mb-6 aspect-[4/5]">
-                            <img src="https://picsum.photos/seed/student1/400/500" alt="Topper" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700" referrerPolicy="no-referrer">
-                            <div class="absolute top-4 right-4 bg-accent text-primary font-black px-3 py-1 rounded-lg text-xs sketchy-border-sm">AIR 452</div>
-                        </div>
-                        <h4 class="text-xl font-bold text-primary mb-1">Aditya Sharma</h4>
-                        <p class="text-sm font-bold text-secondary mb-3">JEE Advanced 2025</p>
-                        <div class="pt-3 border-t border-gray-100 flex justify-between items-center">
-                            <span class="text-[10px] font-bold text-gray-400 uppercase">Loyola School</span>
-                            <i data-lucide="award" class="w-4 h-4 text-accent"></i>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Topper 2 -->
-                <div class="reveal-up" style="transition-delay: 100ms;">
-                    <div class="glass p-4 rounded-[2rem] border border-white/60 shadow-xl sketchy-border group hover:-translate-y-2 transition-all duration-500 pin-effect">
-                        <div class="relative rounded-2xl overflow-hidden mb-6 aspect-[4/5]">
-                            <img src="https://picsum.photos/seed/student2/400/500" alt="Topper" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700" referrerPolicy="no-referrer">
-                            <div class="absolute top-4 right-4 bg-accent text-primary font-black px-3 py-1 rounded-lg text-xs sketchy-border-sm">685/720</div>
-                        </div>
-                        <h4 class="text-xl font-bold text-primary mb-1">Priya Singh</h4>
-                        <p class="text-sm font-bold text-secondary mb-3">NEET 2025</p>
-                        <div class="pt-3 border-t border-gray-100 flex justify-between items-center">
-                            <span class="text-[10px] font-bold text-gray-400 uppercase">Sacred Heart</span>
-                            <i data-lucide="award" class="w-4 h-4 text-accent"></i>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Topper 3 -->
-                <div class="reveal-up" style="transition-delay: 200ms;">
-                    <div class="glass p-4 rounded-[2rem] border border-white/60 shadow-xl sketchy-border group hover:-translate-y-2 transition-all duration-500 tape-effect">
-                        <div class="relative rounded-2xl overflow-hidden mb-6 aspect-[4/5]">
-                            <img src="https://picsum.photos/seed/student3/400/500" alt="Topper" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700" referrerPolicy="no-referrer">
-                            <div class="absolute top-4 right-4 bg-accent text-primary font-black px-3 py-1 rounded-lg text-xs sketchy-border-sm">98.2%</div>
-                        </div>
-                        <h4 class="text-xl font-bold text-primary mb-1">Rohan Verma</h4>
-                        <p class="text-sm font-bold text-secondary mb-3">CBSE Class 12th</p>
-                        <div class="pt-3 border-t border-gray-100 flex justify-between items-center">
-                            <span class="text-[10px] font-bold text-gray-400 uppercase">DPS Jamshedpur</span>
-                            <i data-lucide="award" class="w-4 h-4 text-accent"></i>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Topper 4 -->
-                <div class="reveal-up" style="transition-delay: 300ms;">
-                    <div class="glass p-4 rounded-[2rem] border border-white/60 shadow-xl sketchy-border group hover:-translate-y-2 transition-all duration-500 pin-effect">
-                        <div class="relative rounded-2xl overflow-hidden mb-6 aspect-[4/5]">
-                            <img src="https://picsum.photos/seed/student4/400/500" alt="Topper" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700" referrerPolicy="no-referrer">
-                            <div class="absolute top-4 right-4 bg-accent text-primary font-black px-3 py-1 rounded-lg text-xs sketchy-border-sm">AIR 1205</div>
-                        </div>
-                        <h4 class="text-xl font-bold text-primary mb-1">Ishita Das</h4>
-                        <p class="text-sm font-bold text-secondary mb-3">JEE Main 2025</p>
-                        <div class="pt-3 border-t border-gray-100 flex justify-between items-center">
-                            <span class="text-[10px] font-bold text-gray-400 uppercase">Hill Top School</span>
-                            <i data-lucide="award" class="w-4 h-4 text-accent"></i>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="mt-16 text-center reveal-up">
-                <button class="btn-outline sketchy-border py-4 px-10" onclick="window.location.href='gallery.html'">View All Results</button>
             </div>
         </div>
     </section>
@@ -902,140 +709,192 @@
     <!-- Contact Section -->
     <section id="contact" class="py-24 bg-white relative overflow-hidden">
         <div class="max-w-7xl mx-auto px-6 relative z-10">
-            <div class="grid lg:grid-cols-2 gap-20 items-start">
-                <div class="reveal-left">
-                    <h2 class="text-sm font-bold text-secondary uppercase tracking-widest mb-4">Contact Us</h2>
-                    <h3 class="text-3xl md:text-5xl font-extrabold text-primary mb-8">Get in Touch</h3>
-                    <p class="text-lg text-gray-600 mb-12">
-                        Have questions about our courses or admission process? Fill out the form and our counselor will get back to you within 24 hours.
-                    </p>
-                    
-                    <div class="space-y-8">
-                        <div class="flex gap-5">
-                            <div class="w-12 h-12 glass rounded-2xl shadow-sm flex items-center justify-center shrink-0 border border-white/60 sketchy-border-sm">
-                                <i data-lucide="map-pin" class="text-primary"></i>
-                            </div>
-                            <div>
-                                <h4 class="font-bold text-gray-900">Our Location</h4>
-                                <p class="text-gray-600">1st Floor, Durga Mahal, Pramod Nagar, Near Vivekananda Club, College Road, Parsudih, Jamshedpur, Jharkhand - 831002</p>
-                            </div>
-                        </div>
-                        <div class="flex gap-5">
-                            <div class="w-12 h-12 glass rounded-2xl shadow-sm flex items-center justify-center shrink-0 border border-white/60 sketchy-border-sm">
-                                <i data-lucide="phone" class="text-primary"></i>
-                            </div>
-                            <div class="flex-1">
-                                <h4 class="font-bold text-gray-900">Call or WhatsApp</h4>
-                                <div class="flex items-center gap-4">
-                                    <p class="text-gray-600">+91 91234 56789</p>
-                                    <a href="https://wa.me/919123456789" target="_blank" class="flex items-center gap-1.5 bg-green-500 text-white px-3 py-1 rounded-full text-[10px] font-bold uppercase tracking-wider hover:bg-green-600 transition-colors shadow-sm">
-                                        <i data-lucide="message-circle" class="w-3 h-3"></i> WhatsApp
-                                    </a>
+            <div class="text-center mb-16 reveal-up">
+                <h2 class="text-sm font-bold text-secondary uppercase tracking-widest mb-4">Contact Us</h2>
+                <h3 class="text-4xl md:text-6xl font-extrabold text-primary tracking-tighter">
+                    Let's Start Your <br>
+                    <span class="text-secondary italic">Success Story</span>.
+                </h3>
+            </div>
+
+            <div class="grid lg:grid-cols-12 gap-12 items-start">
+                <!-- Left Column: Info & Form -->
+                <div class="lg:col-span-5 space-y-8">
+                    <!-- Contact Info Cards -->
+                    <div class="grid gap-6">
+                        <div class="glass p-6 rounded-2xl border border-white/60 shadow-lg sketchy-border-sm reveal-left group hover:bg-primary hover:text-white transition-all duration-500">
+                            <div class="flex gap-5 items-start">
+                                <div class="w-12 h-12 glass rounded-xl shadow-sm flex items-center justify-center shrink-0 border border-white/60 sketchy-border-sm group-hover:bg-white/20">
+                                    <i data-lucide="map-pin" class="text-primary group-hover:text-white"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold mb-1">Our Campus</h4>
+                                    <p class="text-sm opacity-70">1st Floor, Durga Mahal, Pramod Nagar, Near Vivekananda Club, College Road, Parsudih, Jamshedpur - 831002</p>
                                 </div>
                             </div>
                         </div>
-                        <div class="flex gap-5">
-                            <div class="w-12 h-12 glass rounded-2xl shadow-sm flex items-center justify-center shrink-0 border border-white/60 sketchy-border-sm">
-                                <i data-lucide="clock" class="text-primary"></i>
-                            </div>
-                            <div class="flex-1">
-                                <h4 class="font-bold text-gray-900 mb-3">Working Hours</h4>
-                                <div class="grid grid-cols-2 gap-x-8 gap-y-2 text-sm text-gray-600">
-                                    <div class="flex justify-between border-b border-gray-100 pb-1">
-                                        <span class="font-medium">Monday</span>
-                                        <span>09:30 AM - 08:00 PM</span>
-                                    </div>
-                                    <div class="flex justify-between border-b border-gray-100 pb-1">
-                                        <span class="font-medium">Tuesday</span>
-                                        <span>09:30 AM - 08:00 PM</span>
-                                    </div>
-                                    <div class="flex justify-between border-b border-gray-100 pb-1">
-                                        <span class="font-medium">Wednesday</span>
-                                        <span>09:30 AM - 08:00 PM</span>
-                                    </div>
-                                    <div class="flex justify-between border-b border-gray-100 pb-1">
-                                        <span class="font-medium">Thursday</span>
-                                        <span>09:30 AM - 08:00 PM</span>
-                                    </div>
-                                    <div class="flex justify-between border-b border-gray-100 pb-1">
-                                        <span class="font-medium">Friday</span>
-                                        <span>09:30 AM - 08:00 PM</span>
-                                    </div>
-                                    <div class="flex justify-between border-b border-gray-100 pb-1">
-                                        <span class="font-medium">Saturday</span>
-                                        <span>09:30 AM - 08:00 PM</span>
-                                    </div>
-                                    <div class="flex justify-between border-b border-gray-100 pb-1 text-secondary font-bold">
-                                        <span>Sunday</span>
-                                        <span>Closed</span>
+
+                        <div class="glass p-6 rounded-2xl border border-white/60 shadow-lg sketchy-border-sm reveal-left group hover:bg-secondary hover:text-white transition-all duration-500" style="transition-delay: 100ms;">
+                            <div class="flex gap-5 items-start">
+                                <div class="w-12 h-12 glass rounded-xl shadow-sm flex items-center justify-center shrink-0 border border-white/60 sketchy-border-sm group-hover:bg-white/20">
+                                    <i data-lucide="phone" class="text-primary group-hover:text-white"></i>
+                                </div>
+                                <div class="flex-1">
+                                    <h4 class="font-bold mb-1">Quick Contact</h4>
+                                    <div class="flex flex-wrap items-center gap-3">
+                                        <p class="text-sm opacity-70">+91 74885 90994, +91 80928 80602</p>
+                                        <a href="https://wa.me/917488590994" target="_blank" class="flex items-center gap-1.5 bg-[#25D366] text-white px-3 py-1.5 rounded-full text-[10px] font-bold uppercase tracking-wider hover:scale-110 transition-all shadow-md hover:shadow-[#25D366]/40">
+                                            <svg class="w-3.5 h-3.5 fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+                                            </svg> WhatsApp
+                                        </a>
                                     </div>
                                 </div>
                             </div>
                         </div>
+                    </div>
+
+                    <!-- Working Hours (Mobile/Tablet) -->
+                    <div class="md:hidden glass p-6 rounded-2xl border border-white/60 shadow-lg sketchy-border-sm reveal-left" style="transition-delay: 150ms;">
+                        <h4 class="text-xs font-bold uppercase text-gray-400 mb-4 flex items-center gap-2">
+                            <i data-lucide="clock" class="w-3 h-3"></i> Working Hours
+                        </h4>
+                        <div class="space-y-2 text-sm font-bold text-primary">
+                            <div class="flex justify-between"><span>Mon - Sun</span><span>9:30 AM - 8:00 PM</span></div>
+                        </div>
+                    </div>
+
+                    <!-- Contact Form -->
+                    <div class="glass p-8 rounded-[2.5rem] shadow-2xl border border-white/60 sketchy-border reveal-left relative !overflow-visible" style="transition-delay: 200ms;">
+                        <!-- Decorative Pin -->
+                        <div class="absolute -top-3 left-1/2 -translate-x-1/2 w-8 h-8 bg-secondary rounded-full shadow-lg flex items-center justify-center z-20 border-4 border-white">
+                            <div class="w-1.5 h-1.5 bg-white rounded-full"></div>
+                        </div>
+
+                        <h4 class="text-2xl font-bold text-primary mb-6 text-center">Send an Inquiry</h4>
+                        <form id="contact-form" class="space-y-4">
+                            <div class="grid sm:grid-cols-2 gap-4">
+                                <input required type="text" placeholder="Your Name" class="w-full px-5 py-3.5 rounded-2xl bg-white/50 border border-white/40 focus:border-primary outline-none transition-all backdrop-blur-md sketchy-border-sm text-sm">
+                                <input required type="tel" placeholder="Phone Number" class="w-full px-5 py-3.5 rounded-2xl bg-white/50 border border-white/40 focus:border-primary outline-none transition-all backdrop-blur-md sketchy-border-sm text-sm">
+                            </div>
+                            <select required class="w-full px-5 py-3.5 rounded-2xl bg-white/50 border border-white/40 focus:border-primary outline-none transition-all appearance-none backdrop-blur-md sketchy-border-sm text-sm">
+                                <option value="">Select Course</option>
+                                <option value="JEE">JEE Advanced</option>
+                                <option value="NEET">NEET Medical</option>
+                                <option value="Foundation">Foundation (8-10)</option>
+                            </select>
+                            <textarea placeholder="Your Message" rows="4" class="w-full px-5 py-3.5 rounded-2xl bg-white/50 border border-white/40 focus:border-primary outline-none transition-all resize-none backdrop-blur-md sketchy-border-sm text-sm"></textarea>
+                            <button type="submit" class="btn-primary sketchy-border w-full py-4 shadow-lg shadow-primary/20 font-bold uppercase tracking-widest text-xs">
+                                Send Message
+                            </button>
+                        </form>
                     </div>
                 </div>
 
-                <div class="glass p-8 md:p-12 rounded-[2.5rem] shadow-2xl border border-white/60 sketchy-border reveal-right">
-                    <div class="mb-8 rounded-2xl overflow-hidden sketchy-border-sm h-64 grayscale hover:grayscale-0 transition-all duration-700">
-                        <iframe 
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3678.84752494165!2d86.2123!3d22.7754!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f5e31989f0e2b3%3A0x6728b9394f1b294!2sParsudih%2C%20Jamshedpur%2C%20Jharkhand!5e0!3m2!1sen!2sin!4v1710150000000!5m2!1sen!2sin" 
-                            class="w-full h-full border-0" 
-                            allowfullscreen="" 
-                            loading="lazy" 
-                            referrerpolicy="no-referrer-when-downgrade">
-                        </iframe>
-                    </div>
-                    <form id="contact-form" class="space-y-5">
-                        <div class="grid sm:grid-cols-2 gap-5">
-                            <input required type="text" placeholder="Your Name" class="w-full px-5 py-3.5 rounded-2xl bg-white/50 border border-white/40 focus:border-primary outline-none transition-all backdrop-blur-md sketchy-border-sm">
-                            <input required type="tel" placeholder="Phone Number" class="w-full px-5 py-3.5 rounded-2xl bg-white/50 border border-white/40 focus:border-primary outline-none transition-all backdrop-blur-md sketchy-border-sm">
+                <!-- Right Column: Map -->
+                <div class="lg:col-span-7 reveal-right">
+                    <div class="relative group">
+                        <!-- Polaroid Frame -->
+                        <div class="bg-white p-4 pb-20 rounded-lg shadow-[0_20px_50px_rgba(0,0,0,0.15)] border border-gray-200 rotate-1 group-hover:rotate-0 transition-all duration-700 sketchy-border relative">
+                            <!-- Decorative Tapes -->
+                            <div class="absolute -top-4 left-1/4 -translate-x-1/2 w-24 h-8 bg-secondary/10 backdrop-blur-sm border border-secondary/20 -rotate-12 z-20 sketchy-border-sm"></div>
+                            <div class="absolute -top-4 right-1/4 translate-x-1/2 w-24 h-8 bg-primary/10 backdrop-blur-sm border border-primary/20 rotate-12 z-20 sketchy-border-sm"></div>
+                            
+                            <!-- Map Container -->
+                            <div class="w-full h-[350px] rounded-sm overflow-hidden relative group/map">
+                                <a href="https://maps.app.goo.gl/39f5e31989f0e2b3:0x6728b9394f1b294" target="_blank" class="block w-full h-full">
+                                    <img src="https://i.supaimg.com/92f82b8e-0941-4720-9455-b7257d1262f2/5636b547-d472-481f-b457-568b788eacfd.jpg" alt="Map Location" class="w-full h-full object-cover transition-all duration-700 group-hover/map:scale-110 select-none pointer-events-none" referrerPolicy="no-referrer" draggable="false">
+                                </a>
+
+                                <!-- Custom Map Overlays -->
+                                <div class="absolute inset-0 pointer-events-none z-10">
+                                    <!-- Directions Button Overlay -->
+                                    <div class="absolute bottom-6 right-6 pointer-events-auto">
+                                        <a href="https://maps.app.goo.gl/39f5e31989f0e2b3:0x6728b9394f1b294" target="_blank" class="bg-white text-primary px-4 py-2 rounded-xl font-bold text-[10px] uppercase tracking-widest shadow-xl flex items-center gap-2 hover:bg-accent transition-all sketchy-border-sm">
+                                            <i data-lucide="navigation" class="w-3 h-3"></i>
+                                            Get Directions
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Polaroid Caption -->
+                            <div class="absolute bottom-6 left-8 right-8 flex items-center justify-between">
+                                <div>
+                                    <h4 class="font-thalia text-2xl text-primary leading-none mb-1">The Foundation</h4>
+                                    <p class="text-[10px] font-bold uppercase tracking-[0.2em] text-secondary">Jamshedpur Campus</p>
+                                </div>
+                                <div class="flex items-center gap-2 bg-green-50 text-green-600 px-3 py-1.5 rounded-full border border-green-200 shadow-sm">
+                                    <div class="w-2 h-2 bg-green-500 rounded-full animate-pulse"></div>
+                                    <span class="text-[10px] font-bold uppercase tracking-wider">Open Now</span>
+                                </div>
+                            </div>
+
+                            <!-- Working Hours Note -->
+                            <div class="absolute -bottom-12 -right-8 w-48 glass p-4 rounded-xl shadow-xl border border-white/60 -rotate-6 sketchy-border-sm z-30 hidden md:block">
+                                <h5 class="text-[10px] font-bold uppercase text-gray-400 mb-2">Working Hours</h5>
+                                <div class="space-y-1 text-[11px] font-bold text-primary">
+                                    <div class="flex justify-between"><span>Mon - Sun</span><span>9:30 - 8:00</span></div>
+                                </div>
+                            </div>
                         </div>
-                        <select required class="w-full px-5 py-3.5 rounded-2xl bg-white/50 border border-white/40 focus:border-primary outline-none transition-all appearance-none backdrop-blur-md sketchy-border-sm">
-                            <option value="">Select Course</option>
-                            <option value="JEE">JEE Advanced</option>
-                            <option value="NEET">NEET Medical</option>
-                            <option value="Foundation">Foundation (8-10)</option>
-                        </select>
-                        <textarea placeholder="Message" rows="4" class="w-full px-5 py-3.5 rounded-2xl bg-white/50 border border-white/40 focus:border-primary outline-none transition-all resize-none backdrop-blur-md sketchy-border-sm"></textarea>
-                        <button type="submit" class="btn-primary sketchy-border w-full py-4 shadow-lg shadow-primary/20">Send Inquiry</button>
-                    </form>
+
+                        <!-- Hand-drawn Arrow -->
+                        <div class="absolute -left-16 top-1/2 -translate-y-1/2 hidden xl:block reveal-left" style="transition-delay: 400ms;">
+                            <div class="relative">
+                                <svg width="100" height="60" viewBox="0 0 100 60" fill="none" xmlns="http://www.w3.org/2000/svg" class="text-secondary rotate-12">
+                                    <path d="M10 10C30 15 50 5 90 40M90 40L75 35M90 40L85 25" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                                <span class="absolute -top-8 left-0 font-thalia text-xl text-secondary whitespace-nowrap -rotate-12">Visit Us!</span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Footer -->
     <footer class="bg-primary text-white pt-20 pb-10 relative overflow-hidden border-t border-white/10">
         <div class="max-w-7xl mx-auto px-6 relative z-10">
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
                 <div class="sm:col-span-2 lg:col-span-2">
                     <div class="flex items-center gap-3 mb-6">
                         <img src="https://i.supaimg.com/92f82b8e-0941-4720-9455-b7257d1262f2/b454a010-4f77-468c-b71b-528723aaeb66.png" class="h-10 w-auto object-contain logo-multiply bg-white rounded-lg p-1" alt="The Foundation Logo" referrerPolicy="no-referrer">
-                        <span class="text-2xl font-extrabold font-thalia">The Foundation</span>
+                        <span class="text-2xl font-extrabold font-thalia text-white">The Foundation</span>
                     </div>
                     <p class="text-white/60 max-w-sm mb-8 leading-relaxed">
                         Empowering students in Jamshedpur with quality education and mentorship since 2019. Join us to create the life you love.
                     </p>
-                    <div class="flex gap-4">
-                        <a href="#" class="w-10 h-10 rounded-lg bg-white/10 flex items-center justify-center transition-all sketchy-border-sm hover:bg-secondary"><i data-lucide="facebook" class="w-5 h-5"></i></a>
-                        <a href="#" class="w-10 h-10 rounded-lg bg-white/10 flex items-center justify-center transition-all sketchy-border-sm hover:bg-secondary"><i data-lucide="instagram" class="w-5 h-5"></i></a>
-                        <a href="#" class="w-10 h-10 rounded-lg bg-white/10 flex items-center justify-center transition-all sketchy-border-sm hover:bg-secondary"><i data-lucide="youtube" class="w-5 h-5"></i></a>
+                    <div class="flex flex-wrap gap-6 items-center">
+                        <div class="flex gap-4">
+                            <a href="https://www.facebook.com/share/1D3MC8Xi9q/" target="_blank" class="w-10 h-10 rounded-lg bg-white/10 flex items-center justify-center transition-all sketchy-border-sm hover:bg-secondary hover:scale-110"><i data-lucide="facebook" class="w-5 h-5"></i></a>
+                            <a href="https://www.instagram.com/thefoundationjsr" target="_blank" class="w-10 h-10 rounded-lg bg-white/10 flex items-center justify-center transition-all sketchy-border-sm hover:bg-secondary hover:scale-110"><i data-lucide="instagram" class="w-5 h-5"></i></a>
+                            <a href="#" class="w-10 h-10 rounded-lg bg-white/10 flex items-center justify-center transition-all sketchy-border-sm hover:bg-secondary hover:scale-110"><i data-lucide="youtube" class="w-5 h-5"></i></a>
+                        </div>
+                        <div class="flex gap-3">
+                            <a href="#" class="transition-transform hover:scale-105 active:scale-95">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play" class="h-10 w-auto" referrerPolicy="no-referrer">
+                            </a>
+                            <a href="#" class="transition-transform hover:scale-105 active:scale-95">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/3/3c/Download_on_the_App_Store_Badge.svg" alt="Download on the App Store" class="h-10 w-auto" referrerPolicy="no-referrer">
+                            </a>
+                        </div>
                     </div>
                 </div>
                 
                 <div>
-                    <h4 class="text-lg font-bold mb-6">Quick Links</h4>
+                    <h4 class="text-lg font-bold mb-6 text-white">Quick Links</h4>
                     <ul class="space-y-4 text-white/60">
                         <li><a href="index.html" class="hover:text-white transition-colors">Home</a></li>
                         <li><a href="courses.html" class="hover:text-white transition-colors">Courses</a></li>
                         <li><a href="gallery.html" class="hover:text-white transition-colors">Gallery</a></li>
+                        <li><a href="demo.html" class="hover:text-white transition-colors">Demo Class</a></li>
                         <li><a href="#about" class="hover:text-white transition-colors">About</a></li>
-                        <li><a href="#results" class="hover:text-white transition-colors">Results</a></li>
                     </ul>
                 </div>
                 
                 <div>
-                    <h4 class="text-lg font-bold mb-6">Support</h4>
+                    <h4 class="text-lg font-bold mb-6 text-white">Support</h4>
                     <ul class="space-y-4 text-white/60">
                         <li><a href="admission-help.html" class="hover:text-white transition-colors">Admission Help</a></li>
                         <li><a href="faq.html" class="hover:text-white transition-colors">FAQ</a></li>
@@ -1045,9 +904,9 @@
                 </div>
                 
                 <div class="sm:col-span-2 lg:col-span-1">
-                    <h4 class="text-lg font-bold mb-6">Stay Updated</h4>
+                    <h4 class="text-lg font-bold mb-6 text-white">Stay Updated</h4>
                     <form class="flex gap-2">
-                        <input type="email" required placeholder="Your email" class="flex-1 px-4 py-2 bg-white/10 border border-white/20 rounded-xl outline-none text-sm sketchy-border-sm">
+                        <input type="email" required placeholder="Your email" class="flex-1 px-4 py-2 bg-white/10 border border-white/20 rounded-xl outline-none text-sm sketchy-border-sm text-white">
                         <button type="submit" class="bg-accent text-primary px-4 py-2 rounded-xl font-bold text-xs sketchy-border-sm">Join</button>
                     </form>
                 </div>

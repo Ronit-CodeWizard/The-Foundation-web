@@ -90,12 +90,14 @@
         </div>
 
         <!-- Mobile Menu -->
-        <div id="mobile-menu" class="hidden absolute top-full left-0 w-full bg-white/95 backdrop-blur-3xl shadow-2xl flex flex-col p-6 gap-4 border-t border-gray-100 sketchy-border">
-            <a href="index.html" class="text-lg font-semibold text-gray-800">Home</a>
-            <a href="courses.html" class="text-lg font-semibold text-gray-800">Courses</a>
-            <a href="gallery.html" class="text-lg font-semibold text-gray-800">Gallery</a>
-            <a href="demo.html" class="text-lg font-semibold text-gray-800">Demo Class</a>
-            <a href="register.html" class="btn-primary sketchy-border w-full py-4 font-bold inline-block text-center">Admission 2026</a>
+        <div id="mobile-menu" class="mobile-menu-container">
+            <a href="index.html">Home</a>
+            <a href="courses.html">Courses</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="demo.html">Demo Class</a>
+            <div class="px-4 pt-4">
+                <a href="register.html" class="btn-primary sketchy-border w-full py-4 font-bold inline-block text-center">Admission 2026</a>
+            </div>
         </div>
     </header>
 
@@ -191,21 +193,54 @@
                 <div class="sm:col-span-2 lg:col-span-2">
                     <div class="flex items-center gap-3 mb-6">
                         <img src="https://i.supaimg.com/92f82b8e-0941-4720-9455-b7257d1262f2/b454a010-4f77-468c-b71b-528723aaeb66.png" class="h-10 w-auto object-contain logo-multiply bg-white rounded-lg p-1" alt="The Foundation Logo" referrerPolicy="no-referrer">
-                        <span class="text-2xl font-extrabold font-thalia">The Foundation</span>
+                        <span class="text-2xl font-extrabold font-thalia text-white">The Foundation</span>
                     </div>
                     <p class="text-white/60 max-w-sm mb-8 leading-relaxed">
                         Empowering students in Jamshedpur with quality education and mentorship since 2019. Join us to create the life you love.
                     </p>
+                    <div class="flex flex-wrap gap-6 items-center">
+                        <div class="flex gap-4">
+                            <a href="https://www.facebook.com/share/1D3MC8Xi9q/" target="_blank" class="w-10 h-10 rounded-lg bg-white/10 flex items-center justify-center transition-all sketchy-border-sm hover:bg-secondary hover:scale-110"><i data-lucide="facebook" class="w-5 h-5"></i></a>
+                            <a href="https://www.instagram.com/thefoundationjsr" target="_blank" class="w-10 h-10 rounded-lg bg-white/10 flex items-center justify-center transition-all sketchy-border-sm hover:bg-secondary hover:scale-110"><i data-lucide="instagram" class="w-5 h-5"></i></a>
+                            <a href="#" class="w-10 h-10 rounded-lg bg-white/10 flex items-center justify-center transition-all sketchy-border-sm hover:bg-secondary hover:scale-110"><i data-lucide="youtube" class="w-5 h-5"></i></a>
+                        </div>
+                        <div class="flex gap-3">
+                            <a href="#" class="transition-transform hover:scale-105 active:scale-95">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play" class="h-10 w-auto" referrerPolicy="no-referrer">
+                            </a>
+                            <a href="#" class="transition-transform hover:scale-105 active:scale-95">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/3/3c/Download_on_the_App_Store_Badge.svg" alt="Download on the App Store" class="h-10 w-auto" referrerPolicy="no-referrer">
+                            </a>
+                        </div>
+                    </div>
                 </div>
                 
                 <div>
-                    <h4 class="text-lg font-bold mb-6">Quick Links</h4>
+                    <h4 class="text-lg font-bold mb-6 text-white">Quick Links</h4>
                     <ul class="space-y-4 text-white/60">
                         <li><a href="index.html" class="hover:text-white transition-colors">Home</a></li>
                         <li><a href="courses.html" class="hover:text-white transition-colors">Courses</a></li>
                         <li><a href="gallery.html" class="hover:text-white transition-colors">Gallery</a></li>
                         <li><a href="demo.html" class="hover:text-white transition-colors">Demo Class</a></li>
                     </ul>
+                </div>
+
+                <div>
+                    <h4 class="text-lg font-bold mb-6 text-white">Support</h4>
+                    <ul class="space-y-4 text-white/60">
+                        <li><a href="admission-help.html" class="hover:text-white transition-colors">Admission Help</a></li>
+                        <li><a href="faq.html" class="hover:text-white transition-colors">FAQ</a></li>
+                        <li><a href="privacy-policy.html" class="hover:text-white transition-colors">Privacy Policy</a></li>
+                        <li><a href="terms-conditions.html" class="hover:text-white transition-colors">Terms & Conditions</a></li>
+                    </ul>
+                </div>
+                
+                <div class="sm:col-span-2 lg:col-span-1">
+                    <h4 class="text-lg font-bold mb-6 text-white">Stay Updated</h4>
+                    <form class="flex gap-2">
+                        <input type="email" required placeholder="Your email" class="flex-1 px-4 py-2 bg-white/10 border border-white/20 rounded-xl outline-none text-sm sketchy-border-sm text-white">
+                        <button type="submit" class="bg-accent text-primary px-4 py-2 rounded-xl font-bold text-xs sketchy-border-sm">Join</button>
+                    </form>
                 </div>
             </div>
             
