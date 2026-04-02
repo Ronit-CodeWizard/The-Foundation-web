@@ -239,7 +239,39 @@
     color: white;
 }
 
+#reveal-btn i, #reveal-btn svg {
+    transition: transform 0.3s ease;
+}
+
+/* Feedback Modal Styles */
+#feedback-modal.active {
+    display: flex;
+}
+
+#feedback-modal.active .modal-content {
+    transform: scale(1);
+    opacity: 1;
+}
+
+.modal-overlay {
+    animation: fade-in 0.3s ease-out forwards;
+}
+
+@keyframes fade-in {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
 /* Reveal Animations */
+@keyframes reveal-down {
+    0% { opacity: 0; transform: translateY(-10px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+.animate-reveal-down {
+    animation: reveal-down 0.4s ease-out forwards;
+}
+
 .reveal-up, .reveal-left, .reveal-right {
     opacity: 0;
     transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);

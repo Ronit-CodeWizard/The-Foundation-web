@@ -224,6 +224,83 @@
         </div>
     </section>
 
+    <!-- Question of the Day Section -->
+    <section class="py-12 bg-surface relative overflow-hidden">
+        <div class="max-w-7xl mx-auto px-6 relative z-10">
+            <div class="glass p-8 md:p-12 rounded-3xl border border-primary/10 shadow-2xl relative overflow-hidden reveal-up sketchy-border bg-white/80 backdrop-blur-xl">
+                <!-- Decorative elements -->
+                <div class="absolute -top-10 -right-10 w-40 h-40 bg-accent/20 rounded-full blur-3xl -z-10 animate-pulse"></div>
+                <div class="absolute -bottom-10 -left-10 w-40 h-40 bg-secondary/10 rounded-full blur-3xl -z-10 animate-pulse" style="animation-delay: 1s;"></div>
+                
+                <div class="flex flex-col lg:flex-row items-center gap-12">
+                    <div class="lg:w-1/2">
+                        <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-secondary/10 text-secondary text-xs font-black uppercase tracking-widest mb-6 sketchy-border-sm">
+                            <i data-lucide="brain" class="w-4 h-4"></i>
+                            Daily Brain Teaser
+                        </div>
+                        <h3 class="text-3xl md:text-5xl font-black text-primary mb-6 leading-tight tracking-tighter">
+                            Question of <br> the <span class="text-secondary underline decoration-wavy decoration-accent underline-offset-8">Day</span>
+                        </h3>
+                        <p class="text-gray-600 text-lg mb-8 font-medium">
+                            Challenge yourself every day with a high-yield JEE/NEET level question. Consistency is the key to a top rank!
+                        </p>
+                        <div class="flex items-center gap-4 text-sm font-bold text-gray-400">
+                            <div class="flex items-center gap-1.5">
+                                <i data-lucide="calendar" class="w-4 h-4"></i>
+                                <span id="current-date-display">April 02, 2026</span>
+                            </div>
+                            <div class="w-px h-4 bg-gray-200"></div>
+                            <div class="flex items-center gap-1.5">
+                                <i data-lucide="tag" class="w-4 h-4"></i>
+                                <span id="question-category">Physics: Mechanics</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="lg:w-1/2 w-full">
+                        <div class="relative group">
+                            <!-- The "Paper" -->
+                            <div class="bg-white p-8 md:p-10 rounded-xl shadow-xl border border-gray-100 relative z-10 sketchy-border tape-effect rotate-1 group-hover:rotate-0 transition-transform duration-500">
+                                <div class="absolute top-4 right-4 opacity-20">
+                                    <i data-lucide="help-circle" class="w-12 h-12 text-primary"></i>
+                                </div>
+                                <div id="question-content" class="prose prose-slate max-w-none">
+                                    <p id="question-text" class="text-xl font-bold text-gray-800 mb-6 leading-relaxed">
+                                        Loading question...
+                                    </p>
+                                    <div id="options-grid" class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
+                                        <!-- Options will be injected here -->
+                                    </div>
+                                </div>
+
+                                <!-- Solution Reveal -->
+                                <div id="solution-container" class="hidden mt-6 pt-6 border-t-2 border-dashed border-gray-100 animate-reveal-down">
+                                    <div class="bg-green-50 p-6 rounded-xl border border-green-100">
+                                        <div id="correct-answer-label" class="flex items-center gap-2 text-green-700 font-black uppercase text-xs tracking-widest mb-3">
+                                            <i data-lucide="check-circle" class="w-4 h-4"></i>
+                                            Correct Answer: B
+                                        </div>
+                                        <p id="solution-text" class="text-sm text-green-800 leading-relaxed font-medium">
+                                            The change in momentum during a half-revolution is Δp = mv - (-mv) = 2mv. The time taken is Δt = πr/v. Average Force = Δp/Δt = (2mv) / (πr/v) = 2mv²/πr.
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <button id="reveal-btn" class="w-full py-4 bg-primary text-white font-black uppercase tracking-[0.2em] text-xs rounded-xl shadow-lg hover:bg-secondary transition-all sketchy-border-sm flex items-center justify-center gap-2 group/btn">
+                                    <span>Reveal Solution</span>
+                                    <i data-lucide="chevron-down" class="w-4 h-4 group-hover/btn:translate-y-1 transition-transform"></i>
+                                </button>
+                            </div>
+                            <!-- Decorative shadows -->
+                            <div class="absolute inset-0 bg-primary/5 rounded-xl -rotate-2 -z-10"></div>
+                            <div class="absolute inset-0 bg-secondary/5 rounded-xl rotate-3 -z-10"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- About Section -->
     <section id="about" class="py-24 bg-white relative overflow-hidden">
         <div class="max-w-7xl mx-auto px-6">
@@ -546,6 +623,119 @@
                         </div>
                     </div>
                 </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Parent's Peace of Mind Section -->
+    <section class="py-24 bg-white relative overflow-hidden">
+        <div class="absolute top-0 left-0 w-full h-full opacity-[0.03] pointer-events-none">
+            <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                    <pattern id="grid-peace" width="40" height="40" patternUnits="userSpaceOnUse">
+                        <path d="M 40 0 L 0 0 0 40" fill="none" stroke="currentColor" stroke-width="1"/>
+                    </pattern>
+                </defs>
+                <rect width="100%" height="100%" fill="url(#grid-peace)" />
+            </svg>
+        </div>
+
+        <div class="max-w-7xl mx-auto px-6 relative z-10">
+            <div class="flex flex-col md:flex-row items-end justify-between mb-16 gap-6 reveal-up">
+                <div class="max-w-2xl">
+                    <h2 class="text-sm font-bold text-secondary uppercase tracking-widest mb-4">For the Parents</h2>
+                    <h3 class="text-3xl md:text-5xl font-extrabold text-primary mb-6">Parent's Peace of Mind</h3>
+                    <p class="text-gray-600 text-lg leading-relaxed">
+                        We understand that your child's safety and progress are your top priorities. At The Foundation, we've built a system that keeps you informed and your child secure.
+                    </p>
+                </div>
+                <div class="hidden lg:block">
+                    <div class="w-32 h-32 border-4 border-dashed border-accent/30 rounded-full flex items-center justify-center animate-spin-slow">
+                        <i data-lucide="shield-check" class="w-16 h-16 text-accent/40"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Feature 1 -->
+                <div class="glass p-8 rounded-2xl border border-white/60 shadow-xl hover:shadow-2xl transition-all duration-500 group reveal-up sketchy-border">
+                    <div class="w-14 h-14 bg-primary/10 rounded-xl flex items-center justify-center text-primary mb-6 group-hover:scale-110 transition-transform sketchy-border-sm">
+                        <i data-lucide="bell-ring" class="w-7 h-7"></i>
+                    </div>
+                    <h4 class="text-xl font-bold text-primary mb-4">Real-time Attendance</h4>
+                    <p class="text-gray-600 text-sm leading-relaxed">
+                        Get instant SMS alerts on your registered mobile number the moment your child enters or leaves the institute premises.
+                    </p>
+                </div>
+
+                <!-- Feature 2 -->
+                <div class="glass p-8 rounded-2xl border border-white/60 shadow-xl hover:shadow-2xl transition-all duration-500 group reveal-up sketchy-border" style="transition-delay: 100ms;">
+                    <div class="w-14 h-14 bg-secondary/10 rounded-xl flex items-center justify-center text-secondary mb-6 group-hover:scale-110 transition-transform sketchy-border-sm">
+                        <i data-lucide="video" class="w-7 h-7"></i>
+                    </div>
+                    <h4 class="text-xl font-bold text-primary mb-4">24/7 CCTV Monitoring</h4>
+                    <p class="text-gray-600 text-sm leading-relaxed">
+                        Our entire campus, including every classroom and common area, is under continuous high-definition surveillance for maximum safety.
+                    </p>
+                </div>
+
+                <!-- Feature 3 -->
+                <div class="glass p-8 rounded-2xl border border-white/60 shadow-xl hover:shadow-2xl transition-all duration-500 group reveal-up sketchy-border" style="transition-delay: 200ms;">
+                    <div class="w-14 h-14 bg-accent/10 rounded-xl flex items-center justify-center text-accent mb-6 group-hover:scale-110 transition-transform sketchy-border-sm">
+                        <i data-lucide="file-bar-chart" class="w-7 h-7"></i>
+                    </div>
+                    <h4 class="text-xl font-bold text-primary mb-4">Monthly Progress Reports</h4>
+                    <p class="text-gray-600 text-sm leading-relaxed">
+                        Receive detailed performance analytics, test scores, and comparative rankings to track your child's academic growth.
+                    </p>
+                </div>
+
+                <!-- Feature 4 -->
+                <div class="glass p-8 rounded-2xl border border-white/60 shadow-xl hover:shadow-2xl transition-all duration-500 group reveal-up sketchy-border" style="transition-delay: 300ms;">
+                    <div class="w-14 h-14 bg-blue-500/10 rounded-xl flex items-center justify-center text-blue-600 mb-6 group-hover:scale-110 transition-transform sketchy-border-sm">
+                        <i data-lucide="users" class="w-7 h-7"></i>
+                    </div>
+                    <h4 class="text-xl font-bold text-primary mb-4">Direct Faculty Access</h4>
+                    <p class="text-gray-600 text-sm leading-relaxed">
+                        Regular Parent-Teacher Meetings (PTMs) and dedicated slots to discuss your child's strengths and areas for improvement.
+                    </p>
+                </div>
+
+                <!-- Feature 5 -->
+                <div class="glass p-8 rounded-2xl border border-white/60 shadow-xl hover:shadow-2xl transition-all duration-500 group reveal-up sketchy-border" style="transition-delay: 400ms;">
+                    <div class="w-14 h-14 bg-green-500/10 rounded-xl flex items-center justify-center text-green-600 mb-6 group-hover:scale-110 transition-transform sketchy-border-sm">
+                        <i data-lucide="shield-check" class="w-7 h-7"></i>
+                    </div>
+                    <h4 class="text-xl font-bold text-primary mb-4">Disciplined Environment</h4>
+                    <p class="text-gray-600 text-sm leading-relaxed">
+                        A strict code of conduct and mobile-free classrooms ensure a focused, distraction-free environment for serious learning.
+                    </p>
+                </div>
+
+                <!-- Feature 6 -->
+                <div class="glass p-8 rounded-2xl border border-white/60 shadow-xl hover:shadow-2xl transition-all duration-500 group reveal-up sketchy-border" style="transition-delay: 500ms;">
+                    <div class="w-14 h-14 bg-purple-500/10 rounded-xl flex items-center justify-center text-purple-600 mb-6 group-hover:scale-110 transition-transform sketchy-border-sm">
+                        <i data-lucide="map-pin" class="w-7 h-7"></i>
+                    </div>
+                    <h4 class="text-xl font-bold text-primary mb-4">Safe & Accessible Campus</h4>
+                    <p class="text-gray-600 text-sm leading-relaxed">
+                        Located in a secure, well-lit area of Parsudih with dedicated security personnel and easy transport accessibility.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Trust Badge -->
+            <div class="mt-20 glass p-8 rounded-3xl border border-primary/10 bg-primary/5 flex flex-col md:flex-row items-center justify-between gap-8 reveal-up sketchy-border">
+                <div class="flex items-center gap-6">
+                    <div class="w-20 h-20 bg-white rounded-full flex items-center justify-center shadow-lg sketchy-border-sm">
+                        <i data-lucide="heart" class="w-10 h-10 text-secondary fill-secondary animate-pulse"></i>
+                    </div>
+                    <div>
+                        <h4 class="text-2xl font-black text-primary">Your Child's Future is Safe with Us</h4>
+                        <p class="text-gray-600 font-medium">Join 500+ families who have trusted us since 2019.</p>
+                    </div>
+                </div>
+                <button class="btn-primary sketchy-border py-4 px-10 whitespace-nowrap" onclick="window.location.href='admission-help.html'">Talk to a Counselor</button>
             </div>
         </div>
     </section>
@@ -923,6 +1113,22 @@
             </div>
         </div>
     </footer>
+
+    <!-- Feedback Modal -->
+        <div id="feedback-modal" class="fixed inset-0 z-[100] flex items-center justify-center p-6 hidden">
+        <div class="absolute inset-0 bg-black/40 backdrop-blur-sm modal-overlay"></div>
+        <div class="bg-white/80 backdrop-blur-xl rounded-3xl p-8 max-w-md w-full relative z-10 shadow-2xl transform scale-90 opacity-0 transition-all duration-300 modal-content border border-white/40 ring-1 ring-black/5">
+            <div id="modal-icon-container" class="w-24 h-24 rounded-full flex items-center justify-center mx-auto mb-6 shadow-xl">
+                <!-- Icon will be injected -->
+            </div>
+            <h3 id="modal-title" class="text-3xl font-black text-center text-gray-900 mb-4 tracking-tight uppercase"></h3>
+            <p id="modal-message" class="text-gray-800 text-center font-bold leading-relaxed mb-8 text-lg"></p>
+            <div class="flex flex-col gap-3">
+                <a href="#courses" class="w-full py-4 bg-primary text-white rounded-xl font-black text-center shadow-xl shadow-primary/30 hover:scale-[1.05] active:scale-95 transition-all uppercase tracking-widest close-modal-btn">Join The Foundation</a>
+                <button id="close-modal" class="w-full py-4 text-gray-500 font-bold hover:text-gray-700 transition-colors uppercase text-xs tracking-widest">Maybe Later</button>
+            </div>
+        </div>
+    </div>
 
     <script src="src/scripts/script.js"></script>
 </body>
